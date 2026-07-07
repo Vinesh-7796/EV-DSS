@@ -1,0 +1,244 @@
+{
+  "source": "test_pipeline.dbc",
+  "type": "dbc",
+  "metadata": {
+    "filename": "test_pipeline.dbc",
+    "file_size": 96,
+    "checksum": "a0c80dad4fe0340fd07117eb1b514e2c5c48b918c08a2daa3d1554043a0efc3e",
+    "page_count": 0,
+    "sheet_count": 0,
+    "message_count": 1,
+    "image_width": 0,
+    "image_height": 0,
+    "image_format": "",
+    "processed_at": "2026-07-06T20:19:54",
+    "processing_time_s": 0.0010409355163574219
+  },
+  "sections": [
+    {
+      "id": "msg_TestMsg",
+      "title": "Message 0x64 (TestMsg)",
+      "level": 2,
+      "page_number": 0,
+      "parent_id": null,
+      "elements": [
+        {
+          "type": "paragraph",
+          "content": "DLC: 8 | Sender: VCU | Cycle: N/A ms",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal Sig1: bit 0, len 16, scale 1.0, offset 0.0 V",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        }
+      ],
+      "subsections": []
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "chunks": [
+    {
+      "id": "chunk_msg_TestMsg",
+      "text": "Message 0x64 (TestMsg): 1 signals. Sig1 (bit 0, 16 bits, 1.0V)",
+      "section_id": "msg_TestMsg",
+      "section_title": "TestMsg",
+      "chapter": "",
+      "page_number": 0,
+      "source_file": "test_pipeline.dbc",
+      "metadata": {
+        "message_id": 100,
+        "dlc": 8,
+        "sender": "VCU"
+      }
+    }
+  ],
+  "raw_text": "// DBC: TestMsg (0x64) DLC=8\n  Sig1: bit=0 len=16 scale=1.0 off=0.0 [V]",
+  "content_nodes": [
+    {
+      "id": "DOC001.MSG_0x64",
+      "type": "dbc_message",
+      "content": {
+        "name": "TestMsg",
+        "id": 100,
+        "dlc": 8,
+        "sender": "VCU",
+        "cycle_time": null,
+        "comment": ""
+      },
+      "reference": {
+        "type": "dbc",
+        "location": {
+          "message": "TestMsg"
+        }
+      },
+      "parent_id": null,
+      "children": [
+        {
+          "id": "DOC001.MSG_0x64.SIG_Sig1",
+          "type": "dbc_signal",
+          "content": {
+            "name": "Sig1",
+            "start_bit": 0,
+            "length": 16,
+            "scale": 1.0,
+            "offset": 0.0,
+            "min_val": 0.0,
+            "max_val": 100.0,
+            "unit": "V",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "MCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "TestMsg",
+              "signal": "Sig1"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x64",
+          "children": [],
+          "metadata": {
+            "start_bit": 0,
+            "length": 16
+          }
+        }
+      ],
+      "metadata": {}
+    }
+  ],
+  "relationship_graph": {
+    "nodes": {
+      "DOC001.MSG_0x64": {
+        "id": "DOC001.MSG_0x64",
+        "type": "dbc_message",
+        "content": {
+          "name": "TestMsg",
+          "id": 100,
+          "dlc": 8,
+          "sender": "VCU",
+          "cycle_time": null,
+          "comment": ""
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "TestMsg"
+          }
+        },
+        "parent_id": null,
+        "children": [
+          {
+            "id": "DOC001.MSG_0x64.SIG_Sig1",
+            "type": "dbc_signal",
+            "content": {
+              "name": "Sig1",
+              "start_bit": 0,
+              "length": 16,
+              "scale": 1.0,
+              "offset": 0.0,
+              "min_val": 0.0,
+              "max_val": 100.0,
+              "unit": "V",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "MCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "TestMsg",
+                "signal": "Sig1"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x64",
+            "children": [],
+            "metadata": {
+              "start_bit": 0,
+              "length": 16
+            }
+          }
+        ],
+        "metadata": {}
+      },
+      "DOC001.MSG_0x64.SIG_Sig1": {
+        "id": "DOC001.MSG_0x64.SIG_Sig1",
+        "type": "dbc_signal",
+        "content": {
+          "name": "Sig1",
+          "start_bit": 0,
+          "length": 16,
+          "scale": 1.0,
+          "offset": 0.0,
+          "min_val": 0.0,
+          "max_val": 100.0,
+          "unit": "V",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "MCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "TestMsg",
+            "signal": "Sig1"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x64",
+        "children": [],
+        "metadata": {
+          "start_bit": 0,
+          "length": 16
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "DOC001.MSG_0x64",
+        "target": "DOC001",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x64.SIG_Sig1",
+        "target": "DOC001.MSG_0x64",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ]
+  },
+  "processing_info": {
+    "processor_name": "DBCProcessor",
+    "processing_time_s": 0.001110076904296875,
+    "processed_at": "2026-07-06T20:19:54",
+    "schema_version": "2.0"
+  },
+  "statistics": {
+    "total_content_nodes": 2,
+    "total_relationships": 2,
+    "node_type_counts": {
+      "dbc_message": 1,
+      "dbc_signal": 1
+    },
+    "max_depth": 1
+  },
+  "_schema_version": "2.0",
+  "_generated_at": "2026-07-06T20:19:54.546065"
+}

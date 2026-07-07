@@ -1,0 +1,2380 @@
+{
+  "source": "Vehicle.dbc",
+  "type": "dbc",
+  "metadata": {
+    "filename": "Vehicle.dbc",
+    "file_size": 1977,
+    "checksum": "9acfcc59b25fe2e1bd6b59644d6138081cb54794e6f9b886a9ad40eb0976bc9d",
+    "page_count": 0,
+    "sheet_count": 0,
+    "message_count": 5,
+    "image_width": 0,
+    "image_height": 0,
+    "image_format": "",
+    "processed_at": "2026-07-06T20:08:25",
+    "processing_time_s": 0.0010938644409179688
+  },
+  "sections": [
+    {
+      "id": "msg_MotorStatus",
+      "title": "Message 0x181 (MotorStatus)",
+      "level": 2,
+      "page_number": 0,
+      "parent_id": null,
+      "elements": [
+        {
+          "type": "paragraph",
+          "content": "DLC: 8 | Sender: MCU | Cycle: 100.0 ms",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal MotorRPM: bit 0, len 16, scale 0.125, offset 0.0 rpm",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal MotorTemp: bit 16, len 8, scale 1.0, offset -40.0 degC",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "msg_HVStatus",
+      "title": "Message 0x182 (HVStatus)",
+      "level": 2,
+      "page_number": 0,
+      "parent_id": null,
+      "elements": [
+        {
+          "type": "paragraph",
+          "content": "DLC: 8 | Sender: BMS | Cycle: 100.0 ms",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal BatteryVoltage: bit 0, len 16, scale 0.1, offset 0.0 V",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal MotorCurrent: bit 16, len 16, scale 0.1, offset -400.0 A",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal CoolantTemp: bit 32, len 8, scale 1.0, offset -40.0 degC",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "msg_VcuCommand",
+      "title": "Message 0x201 (VcuCommand)",
+      "level": 2,
+      "page_number": 0,
+      "parent_id": null,
+      "elements": [
+        {
+          "type": "paragraph",
+          "content": "DLC: 8 | Sender: VCU | Cycle: 100.0 ms",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal TorqueDemand: bit 0, len 16, scale 0.1, offset -500.0 Nm",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal EnableRequest: bit 16, len 1, scale 1.0, offset 0.0 ",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal PumpControl: bit 24, len 1, scale 1.0, offset 0.0 ",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal FanControl: bit 25, len 1, scale 1.0, offset 0.0 ",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal DiagService: bit 56, len 8, scale 1.0, offset 0.0 ",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "msg_BatteryInfo",
+      "title": "Message 0x202 (BatteryInfo)",
+      "level": 2,
+      "page_number": 0,
+      "parent_id": null,
+      "elements": [
+        {
+          "type": "paragraph",
+          "content": "DLC: 8 | Sender: BMS | Cycle: 500.0 ms",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal StateOfCharge: bit 0, len 8, scale 0.5, offset 0.0 %",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal CellVoltageMin: bit 8, len 16, scale 0.001, offset 0.0 V",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal CellVoltageMax: bit 24, len 16, scale 0.001, offset 0.0 V",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal IsolationResistance: bit 40, len 16, scale 1.0, offset 0.0 kOhm",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "msg_ThermalStatus",
+      "title": "Message 0x203 (ThermalStatus)",
+      "level": 2,
+      "page_number": 0,
+      "parent_id": null,
+      "elements": [
+        {
+          "type": "paragraph",
+          "content": "DLC: 8 | Sender: TMM | Cycle: 1000.0 ms",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal RadiatorTemp: bit 0, len 8, scale 1.0, offset -40.0 degC",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal PumpSpeed: bit 8, len 16, scale 0.1, offset 0.0 rpm",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal FanSpeed: bit 24, len 8, scale 1.0, offset 0.0 %",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        }
+      ],
+      "subsections": []
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "chunks": [
+    {
+      "id": "chunk_msg_MotorStatus",
+      "text": "Message 0x181 (MotorStatus): 2 signals. MotorRPM (bit 0, 16 bits, 0.125rpm) MotorTemp (bit 16, 8 bits, 1.0degC)",
+      "section_id": "msg_MotorStatus",
+      "section_title": "MotorStatus",
+      "chapter": "",
+      "page_number": 0,
+      "source_file": "Vehicle.dbc",
+      "metadata": {
+        "message_id": 385,
+        "dlc": 8,
+        "sender": "MCU"
+      }
+    },
+    {
+      "id": "chunk_msg_HVStatus",
+      "text": "Message 0x182 (HVStatus): 3 signals. BatteryVoltage (bit 0, 16 bits, 0.1V) MotorCurrent (bit 16, 16 bits, 0.1A) CoolantTemp (bit 32, 8 bits, 1.0degC)",
+      "section_id": "msg_HVStatus",
+      "section_title": "HVStatus",
+      "chapter": "",
+      "page_number": 0,
+      "source_file": "Vehicle.dbc",
+      "metadata": {
+        "message_id": 386,
+        "dlc": 8,
+        "sender": "BMS"
+      }
+    },
+    {
+      "id": "chunk_msg_VcuCommand",
+      "text": "Message 0x201 (VcuCommand): 5 signals. TorqueDemand (bit 0, 16 bits, 0.1Nm) EnableRequest (bit 16, 1 bits, 1.0) PumpControl (bit 24, 1 bits, 1.0) FanControl (bit 25, 1 bits, 1.0) DiagService (bit 56, 8 bits, 1.0)",
+      "section_id": "msg_VcuCommand",
+      "section_title": "VcuCommand",
+      "chapter": "",
+      "page_number": 0,
+      "source_file": "Vehicle.dbc",
+      "metadata": {
+        "message_id": 513,
+        "dlc": 8,
+        "sender": "VCU"
+      }
+    },
+    {
+      "id": "chunk_msg_BatteryInfo",
+      "text": "Message 0x202 (BatteryInfo): 4 signals. StateOfCharge (bit 0, 8 bits, 0.5%) CellVoltageMin (bit 8, 16 bits, 0.001V) CellVoltageMax (bit 24, 16 bits, 0.001V) IsolationResistance (bit 40, 16 bits, 1.0kOhm)",
+      "section_id": "msg_BatteryInfo",
+      "section_title": "BatteryInfo",
+      "chapter": "",
+      "page_number": 0,
+      "source_file": "Vehicle.dbc",
+      "metadata": {
+        "message_id": 514,
+        "dlc": 8,
+        "sender": "BMS"
+      }
+    },
+    {
+      "id": "chunk_msg_ThermalStatus",
+      "text": "Message 0x203 (ThermalStatus): 3 signals. RadiatorTemp (bit 0, 8 bits, 1.0degC) PumpSpeed (bit 8, 16 bits, 0.1rpm) FanSpeed (bit 24, 8 bits, 1.0%)",
+      "section_id": "msg_ThermalStatus",
+      "section_title": "ThermalStatus",
+      "chapter": "",
+      "page_number": 0,
+      "source_file": "Vehicle.dbc",
+      "metadata": {
+        "message_id": 515,
+        "dlc": 8,
+        "sender": "TMM"
+      }
+    }
+  ],
+  "raw_text": "// DBC: MotorStatus (0x181) DLC=8\n// DBC: HVStatus (0x182) DLC=8\n// DBC: VcuCommand (0x201) DLC=8\n// DBC: BatteryInfo (0x202) DLC=8\n// DBC: ThermalStatus (0x203) DLC=8\n  MotorRPM: bit=0 len=16 scale=0.125 off=0.0 [rpm]\n  MotorTemp: bit=16 len=8 scale=1.0 off=-40.0 [degC]\n  BatteryVoltage: bit=0 len=16 scale=0.1 off=0.0 [V]\n  MotorCurrent: bit=16 len=16 scale=0.1 off=-400.0 [A]\n  CoolantTemp: bit=32 len=8 scale=1.0 off=-40.0 [degC]\n  TorqueDemand: bit=0 len=16 scale=0.1 off=-500.0 [Nm]\n  EnableRequest: bit=16 len=1 scale=1.0 off=0.0 []\n  PumpControl: bit=24 len=1 scale=1.0 off=0.0 []\n  FanControl: bit=25 len=1 scale=1.0 off=0.0 []\n  DiagService: bit=56 len=8 scale=1.0 off=0.0 []\n  StateOfCharge: bit=0 len=8 scale=0.5 off=0.0 [%]\n  CellVoltageMin: bit=8 len=16 scale=0.001 off=0.0 [V]\n  CellVoltageMax: bit=24 len=16 scale=0.001 off=0.0 [V]\n  IsolationResistance: bit=40 len=16 scale=1.0 off=0.0 [kOhm]\n  RadiatorTemp: bit=0 len=8 scale=1.0 off=-40.0 [degC]\n  PumpSpeed: bit=8 len=16 scale=0.1 off=0.0 [rpm]\n  FanSpeed: bit=24 len=8 scale=1.0 off=0.0 [%]",
+  "content_nodes": [
+    {
+      "id": "DOC001.MSG_0x181",
+      "type": "dbc_message",
+      "content": {
+        "name": "MotorStatus",
+        "id": 385,
+        "dlc": 8,
+        "sender": "MCU",
+        "cycle_time": 100.0,
+        "comment": "Motor status information including RPM and temperature"
+      },
+      "reference": {
+        "type": "dbc",
+        "location": {
+          "message": "MotorStatus"
+        }
+      },
+      "parent_id": null,
+      "children": [
+        {
+          "id": "DOC001.MSG_0x181.SIG_MotorRPM",
+          "type": "dbc_signal",
+          "content": {
+            "name": "MotorRPM",
+            "start_bit": 0,
+            "length": 16,
+            "scale": 0.125,
+            "offset": 0.0,
+            "min_val": 0.0,
+            "max_val": 12000.0,
+            "unit": "rpm",
+            "comment": "Motor rotational speed measured by resolver",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "VCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "MotorStatus",
+              "signal": "MotorRPM"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x181",
+          "children": [],
+          "metadata": {
+            "start_bit": 0,
+            "length": 16
+          }
+        },
+        {
+          "id": "DOC001.MSG_0x181.SIG_MotorTemp",
+          "type": "dbc_signal",
+          "content": {
+            "name": "MotorTemp",
+            "start_bit": 16,
+            "length": 8,
+            "scale": 1.0,
+            "offset": -40.0,
+            "min_val": -40.0,
+            "max_val": 215.0,
+            "unit": "degC",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "VCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "MotorStatus",
+              "signal": "MotorTemp"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x181",
+          "children": [],
+          "metadata": {
+            "start_bit": 16,
+            "length": 8
+          }
+        }
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "DOC001.MSG_0x182",
+      "type": "dbc_message",
+      "content": {
+        "name": "HVStatus",
+        "id": 386,
+        "dlc": 8,
+        "sender": "BMS",
+        "cycle_time": 100.0,
+        "comment": "High voltage system status from BMS"
+      },
+      "reference": {
+        "type": "dbc",
+        "location": {
+          "message": "HVStatus"
+        }
+      },
+      "parent_id": null,
+      "children": [
+        {
+          "id": "DOC001.MSG_0x182.SIG_BatteryVoltage",
+          "type": "dbc_signal",
+          "content": {
+            "name": "BatteryVoltage",
+            "start_bit": 0,
+            "length": 16,
+            "scale": 0.1,
+            "offset": 0.0,
+            "min_val": 0.0,
+            "max_val": 500.0,
+            "unit": "V",
+            "comment": "HV DC bus voltage at battery terminals",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "VCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "HVStatus",
+              "signal": "BatteryVoltage"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x182",
+          "children": [],
+          "metadata": {
+            "start_bit": 0,
+            "length": 16
+          }
+        },
+        {
+          "id": "DOC001.MSG_0x182.SIG_MotorCurrent",
+          "type": "dbc_signal",
+          "content": {
+            "name": "MotorCurrent",
+            "start_bit": 16,
+            "length": 16,
+            "scale": 0.1,
+            "offset": -400.0,
+            "min_val": -400.0,
+            "max_val": 400.0,
+            "unit": "A",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "MCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "HVStatus",
+              "signal": "MotorCurrent"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x182",
+          "children": [],
+          "metadata": {
+            "start_bit": 16,
+            "length": 16
+          }
+        },
+        {
+          "id": "DOC001.MSG_0x182.SIG_CoolantTemp",
+          "type": "dbc_signal",
+          "content": {
+            "name": "CoolantTemp",
+            "start_bit": 32,
+            "length": 8,
+            "scale": 1.0,
+            "offset": -40.0,
+            "min_val": -40.0,
+            "max_val": 215.0,
+            "unit": "degC",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "VCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "HVStatus",
+              "signal": "CoolantTemp"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x182",
+          "children": [],
+          "metadata": {
+            "start_bit": 32,
+            "length": 8
+          }
+        }
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "DOC001.MSG_0x201",
+      "type": "dbc_message",
+      "content": {
+        "name": "VcuCommand",
+        "id": 513,
+        "dlc": 8,
+        "sender": "VCU",
+        "cycle_time": 100.0,
+        "comment": "Vehicle control unit command messages"
+      },
+      "reference": {
+        "type": "dbc",
+        "location": {
+          "message": "VcuCommand"
+        }
+      },
+      "parent_id": null,
+      "children": [
+        {
+          "id": "DOC001.MSG_0x201.SIG_TorqueDemand",
+          "type": "dbc_signal",
+          "content": {
+            "name": "TorqueDemand",
+            "start_bit": 0,
+            "length": 16,
+            "scale": 0.1,
+            "offset": -500.0,
+            "min_val": -500.0,
+            "max_val": 500.0,
+            "unit": "Nm",
+            "comment": "Driver requested torque from VCU to MCU",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "MCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "VcuCommand",
+              "signal": "TorqueDemand"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x201",
+          "children": [],
+          "metadata": {
+            "start_bit": 0,
+            "length": 16
+          }
+        },
+        {
+          "id": "DOC001.MSG_0x201.SIG_EnableRequest",
+          "type": "dbc_signal",
+          "content": {
+            "name": "EnableRequest",
+            "start_bit": 16,
+            "length": 1,
+            "scale": 1.0,
+            "offset": 0.0,
+            "min_val": 0.0,
+            "max_val": 1.0,
+            "unit": "",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "MCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "VcuCommand",
+              "signal": "EnableRequest"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x201",
+          "children": [],
+          "metadata": {
+            "start_bit": 16,
+            "length": 1
+          }
+        },
+        {
+          "id": "DOC001.MSG_0x201.SIG_PumpControl",
+          "type": "dbc_signal",
+          "content": {
+            "name": "PumpControl",
+            "start_bit": 24,
+            "length": 1,
+            "scale": 1.0,
+            "offset": 0.0,
+            "min_val": 0.0,
+            "max_val": 1.0,
+            "unit": "",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "TMM"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "VcuCommand",
+              "signal": "PumpControl"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x201",
+          "children": [],
+          "metadata": {
+            "start_bit": 24,
+            "length": 1
+          }
+        },
+        {
+          "id": "DOC001.MSG_0x201.SIG_FanControl",
+          "type": "dbc_signal",
+          "content": {
+            "name": "FanControl",
+            "start_bit": 25,
+            "length": 1,
+            "scale": 1.0,
+            "offset": 0.0,
+            "min_val": 0.0,
+            "max_val": 1.0,
+            "unit": "",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "TMM"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "VcuCommand",
+              "signal": "FanControl"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x201",
+          "children": [],
+          "metadata": {
+            "start_bit": 25,
+            "length": 1
+          }
+        },
+        {
+          "id": "DOC001.MSG_0x201.SIG_DiagService",
+          "type": "dbc_signal",
+          "content": {
+            "name": "DiagService",
+            "start_bit": 56,
+            "length": 8,
+            "scale": 1.0,
+            "offset": 0.0,
+            "min_val": 0.0,
+            "max_val": 255.0,
+            "unit": "",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "MCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "VcuCommand",
+              "signal": "DiagService"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x201",
+          "children": [],
+          "metadata": {
+            "start_bit": 56,
+            "length": 8
+          }
+        }
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "DOC001.MSG_0x202",
+      "type": "dbc_message",
+      "content": {
+        "name": "BatteryInfo",
+        "id": 514,
+        "dlc": 8,
+        "sender": "BMS",
+        "cycle_time": 500.0,
+        "comment": "Battery pack status and cell information"
+      },
+      "reference": {
+        "type": "dbc",
+        "location": {
+          "message": "BatteryInfo"
+        }
+      },
+      "parent_id": null,
+      "children": [
+        {
+          "id": "DOC001.MSG_0x202.SIG_StateOfCharge",
+          "type": "dbc_signal",
+          "content": {
+            "name": "StateOfCharge",
+            "start_bit": 0,
+            "length": 8,
+            "scale": 0.5,
+            "offset": 0.0,
+            "min_val": 0.0,
+            "max_val": 100.0,
+            "unit": "%",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "VCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "BatteryInfo",
+              "signal": "StateOfCharge"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x202",
+          "children": [],
+          "metadata": {
+            "start_bit": 0,
+            "length": 8
+          }
+        },
+        {
+          "id": "DOC001.MSG_0x202.SIG_CellVoltageMin",
+          "type": "dbc_signal",
+          "content": {
+            "name": "CellVoltageMin",
+            "start_bit": 8,
+            "length": 16,
+            "scale": 0.001,
+            "offset": 0.0,
+            "min_val": 2.5,
+            "max_val": 4.3,
+            "unit": "V",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "VCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "BatteryInfo",
+              "signal": "CellVoltageMin"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x202",
+          "children": [],
+          "metadata": {
+            "start_bit": 8,
+            "length": 16
+          }
+        },
+        {
+          "id": "DOC001.MSG_0x202.SIG_CellVoltageMax",
+          "type": "dbc_signal",
+          "content": {
+            "name": "CellVoltageMax",
+            "start_bit": 24,
+            "length": 16,
+            "scale": 0.001,
+            "offset": 0.0,
+            "min_val": 2.5,
+            "max_val": 4.3,
+            "unit": "V",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "VCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "BatteryInfo",
+              "signal": "CellVoltageMax"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x202",
+          "children": [],
+          "metadata": {
+            "start_bit": 24,
+            "length": 16
+          }
+        },
+        {
+          "id": "DOC001.MSG_0x202.SIG_IsolationResistance",
+          "type": "dbc_signal",
+          "content": {
+            "name": "IsolationResistance",
+            "start_bit": 40,
+            "length": 16,
+            "scale": 1.0,
+            "offset": 0.0,
+            "min_val": 0.0,
+            "max_val": 65000.0,
+            "unit": "kOhm",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "VCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "BatteryInfo",
+              "signal": "IsolationResistance"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x202",
+          "children": [],
+          "metadata": {
+            "start_bit": 40,
+            "length": 16
+          }
+        }
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "DOC001.MSG_0x203",
+      "type": "dbc_message",
+      "content": {
+        "name": "ThermalStatus",
+        "id": 515,
+        "dlc": 8,
+        "sender": "TMM",
+        "cycle_time": 1000.0,
+        "comment": "Thermal management system status"
+      },
+      "reference": {
+        "type": "dbc",
+        "location": {
+          "message": "ThermalStatus"
+        }
+      },
+      "parent_id": null,
+      "children": [
+        {
+          "id": "DOC001.MSG_0x203.SIG_RadiatorTemp",
+          "type": "dbc_signal",
+          "content": {
+            "name": "RadiatorTemp",
+            "start_bit": 0,
+            "length": 8,
+            "scale": 1.0,
+            "offset": -40.0,
+            "min_val": -40.0,
+            "max_val": 215.0,
+            "unit": "degC",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "VCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "ThermalStatus",
+              "signal": "RadiatorTemp"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x203",
+          "children": [],
+          "metadata": {
+            "start_bit": 0,
+            "length": 8
+          }
+        },
+        {
+          "id": "DOC001.MSG_0x203.SIG_PumpSpeed",
+          "type": "dbc_signal",
+          "content": {
+            "name": "PumpSpeed",
+            "start_bit": 8,
+            "length": 16,
+            "scale": 0.1,
+            "offset": 0.0,
+            "min_val": 0.0,
+            "max_val": 6000.0,
+            "unit": "rpm",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "VCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "ThermalStatus",
+              "signal": "PumpSpeed"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x203",
+          "children": [],
+          "metadata": {
+            "start_bit": 8,
+            "length": 16
+          }
+        },
+        {
+          "id": "DOC001.MSG_0x203.SIG_FanSpeed",
+          "type": "dbc_signal",
+          "content": {
+            "name": "FanSpeed",
+            "start_bit": 24,
+            "length": 8,
+            "scale": 1.0,
+            "offset": 0.0,
+            "min_val": 0.0,
+            "max_val": 100.0,
+            "unit": "%",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "VCU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "ThermalStatus",
+              "signal": "FanSpeed"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x203",
+          "children": [],
+          "metadata": {
+            "start_bit": 24,
+            "length": 8
+          }
+        }
+      ],
+      "metadata": {}
+    }
+  ],
+  "relationship_graph": {
+    "nodes": {
+      "DOC001.MSG_0x181": {
+        "id": "DOC001.MSG_0x181",
+        "type": "dbc_message",
+        "content": {
+          "name": "MotorStatus",
+          "id": 385,
+          "dlc": 8,
+          "sender": "MCU",
+          "cycle_time": 100.0,
+          "comment": "Motor status information including RPM and temperature"
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "MotorStatus"
+          }
+        },
+        "parent_id": null,
+        "children": [
+          {
+            "id": "DOC001.MSG_0x181.SIG_MotorRPM",
+            "type": "dbc_signal",
+            "content": {
+              "name": "MotorRPM",
+              "start_bit": 0,
+              "length": 16,
+              "scale": 0.125,
+              "offset": 0.0,
+              "min_val": 0.0,
+              "max_val": 12000.0,
+              "unit": "rpm",
+              "comment": "Motor rotational speed measured by resolver",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "VCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "MotorStatus",
+                "signal": "MotorRPM"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x181",
+            "children": [],
+            "metadata": {
+              "start_bit": 0,
+              "length": 16
+            }
+          },
+          {
+            "id": "DOC001.MSG_0x181.SIG_MotorTemp",
+            "type": "dbc_signal",
+            "content": {
+              "name": "MotorTemp",
+              "start_bit": 16,
+              "length": 8,
+              "scale": 1.0,
+              "offset": -40.0,
+              "min_val": -40.0,
+              "max_val": 215.0,
+              "unit": "degC",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "VCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "MotorStatus",
+                "signal": "MotorTemp"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x181",
+            "children": [],
+            "metadata": {
+              "start_bit": 16,
+              "length": 8
+            }
+          }
+        ],
+        "metadata": {}
+      },
+      "DOC001.MSG_0x181.SIG_MotorRPM": {
+        "id": "DOC001.MSG_0x181.SIG_MotorRPM",
+        "type": "dbc_signal",
+        "content": {
+          "name": "MotorRPM",
+          "start_bit": 0,
+          "length": 16,
+          "scale": 0.125,
+          "offset": 0.0,
+          "min_val": 0.0,
+          "max_val": 12000.0,
+          "unit": "rpm",
+          "comment": "Motor rotational speed measured by resolver",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "VCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "MotorStatus",
+            "signal": "MotorRPM"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x181",
+        "children": [],
+        "metadata": {
+          "start_bit": 0,
+          "length": 16
+        }
+      },
+      "DOC001.MSG_0x181.SIG_MotorTemp": {
+        "id": "DOC001.MSG_0x181.SIG_MotorTemp",
+        "type": "dbc_signal",
+        "content": {
+          "name": "MotorTemp",
+          "start_bit": 16,
+          "length": 8,
+          "scale": 1.0,
+          "offset": -40.0,
+          "min_val": -40.0,
+          "max_val": 215.0,
+          "unit": "degC",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "VCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "MotorStatus",
+            "signal": "MotorTemp"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x181",
+        "children": [],
+        "metadata": {
+          "start_bit": 16,
+          "length": 8
+        }
+      },
+      "DOC001.MSG_0x182": {
+        "id": "DOC001.MSG_0x182",
+        "type": "dbc_message",
+        "content": {
+          "name": "HVStatus",
+          "id": 386,
+          "dlc": 8,
+          "sender": "BMS",
+          "cycle_time": 100.0,
+          "comment": "High voltage system status from BMS"
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "HVStatus"
+          }
+        },
+        "parent_id": null,
+        "children": [
+          {
+            "id": "DOC001.MSG_0x182.SIG_BatteryVoltage",
+            "type": "dbc_signal",
+            "content": {
+              "name": "BatteryVoltage",
+              "start_bit": 0,
+              "length": 16,
+              "scale": 0.1,
+              "offset": 0.0,
+              "min_val": 0.0,
+              "max_val": 500.0,
+              "unit": "V",
+              "comment": "HV DC bus voltage at battery terminals",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "VCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "HVStatus",
+                "signal": "BatteryVoltage"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x182",
+            "children": [],
+            "metadata": {
+              "start_bit": 0,
+              "length": 16
+            }
+          },
+          {
+            "id": "DOC001.MSG_0x182.SIG_MotorCurrent",
+            "type": "dbc_signal",
+            "content": {
+              "name": "MotorCurrent",
+              "start_bit": 16,
+              "length": 16,
+              "scale": 0.1,
+              "offset": -400.0,
+              "min_val": -400.0,
+              "max_val": 400.0,
+              "unit": "A",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "MCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "HVStatus",
+                "signal": "MotorCurrent"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x182",
+            "children": [],
+            "metadata": {
+              "start_bit": 16,
+              "length": 16
+            }
+          },
+          {
+            "id": "DOC001.MSG_0x182.SIG_CoolantTemp",
+            "type": "dbc_signal",
+            "content": {
+              "name": "CoolantTemp",
+              "start_bit": 32,
+              "length": 8,
+              "scale": 1.0,
+              "offset": -40.0,
+              "min_val": -40.0,
+              "max_val": 215.0,
+              "unit": "degC",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "VCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "HVStatus",
+                "signal": "CoolantTemp"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x182",
+            "children": [],
+            "metadata": {
+              "start_bit": 32,
+              "length": 8
+            }
+          }
+        ],
+        "metadata": {}
+      },
+      "DOC001.MSG_0x182.SIG_BatteryVoltage": {
+        "id": "DOC001.MSG_0x182.SIG_BatteryVoltage",
+        "type": "dbc_signal",
+        "content": {
+          "name": "BatteryVoltage",
+          "start_bit": 0,
+          "length": 16,
+          "scale": 0.1,
+          "offset": 0.0,
+          "min_val": 0.0,
+          "max_val": 500.0,
+          "unit": "V",
+          "comment": "HV DC bus voltage at battery terminals",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "VCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "HVStatus",
+            "signal": "BatteryVoltage"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x182",
+        "children": [],
+        "metadata": {
+          "start_bit": 0,
+          "length": 16
+        }
+      },
+      "DOC001.MSG_0x182.SIG_MotorCurrent": {
+        "id": "DOC001.MSG_0x182.SIG_MotorCurrent",
+        "type": "dbc_signal",
+        "content": {
+          "name": "MotorCurrent",
+          "start_bit": 16,
+          "length": 16,
+          "scale": 0.1,
+          "offset": -400.0,
+          "min_val": -400.0,
+          "max_val": 400.0,
+          "unit": "A",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "MCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "HVStatus",
+            "signal": "MotorCurrent"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x182",
+        "children": [],
+        "metadata": {
+          "start_bit": 16,
+          "length": 16
+        }
+      },
+      "DOC001.MSG_0x182.SIG_CoolantTemp": {
+        "id": "DOC001.MSG_0x182.SIG_CoolantTemp",
+        "type": "dbc_signal",
+        "content": {
+          "name": "CoolantTemp",
+          "start_bit": 32,
+          "length": 8,
+          "scale": 1.0,
+          "offset": -40.0,
+          "min_val": -40.0,
+          "max_val": 215.0,
+          "unit": "degC",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "VCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "HVStatus",
+            "signal": "CoolantTemp"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x182",
+        "children": [],
+        "metadata": {
+          "start_bit": 32,
+          "length": 8
+        }
+      },
+      "DOC001.MSG_0x201": {
+        "id": "DOC001.MSG_0x201",
+        "type": "dbc_message",
+        "content": {
+          "name": "VcuCommand",
+          "id": 513,
+          "dlc": 8,
+          "sender": "VCU",
+          "cycle_time": 100.0,
+          "comment": "Vehicle control unit command messages"
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "VcuCommand"
+          }
+        },
+        "parent_id": null,
+        "children": [
+          {
+            "id": "DOC001.MSG_0x201.SIG_TorqueDemand",
+            "type": "dbc_signal",
+            "content": {
+              "name": "TorqueDemand",
+              "start_bit": 0,
+              "length": 16,
+              "scale": 0.1,
+              "offset": -500.0,
+              "min_val": -500.0,
+              "max_val": 500.0,
+              "unit": "Nm",
+              "comment": "Driver requested torque from VCU to MCU",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "MCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "VcuCommand",
+                "signal": "TorqueDemand"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x201",
+            "children": [],
+            "metadata": {
+              "start_bit": 0,
+              "length": 16
+            }
+          },
+          {
+            "id": "DOC001.MSG_0x201.SIG_EnableRequest",
+            "type": "dbc_signal",
+            "content": {
+              "name": "EnableRequest",
+              "start_bit": 16,
+              "length": 1,
+              "scale": 1.0,
+              "offset": 0.0,
+              "min_val": 0.0,
+              "max_val": 1.0,
+              "unit": "",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "MCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "VcuCommand",
+                "signal": "EnableRequest"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x201",
+            "children": [],
+            "metadata": {
+              "start_bit": 16,
+              "length": 1
+            }
+          },
+          {
+            "id": "DOC001.MSG_0x201.SIG_PumpControl",
+            "type": "dbc_signal",
+            "content": {
+              "name": "PumpControl",
+              "start_bit": 24,
+              "length": 1,
+              "scale": 1.0,
+              "offset": 0.0,
+              "min_val": 0.0,
+              "max_val": 1.0,
+              "unit": "",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "TMM"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "VcuCommand",
+                "signal": "PumpControl"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x201",
+            "children": [],
+            "metadata": {
+              "start_bit": 24,
+              "length": 1
+            }
+          },
+          {
+            "id": "DOC001.MSG_0x201.SIG_FanControl",
+            "type": "dbc_signal",
+            "content": {
+              "name": "FanControl",
+              "start_bit": 25,
+              "length": 1,
+              "scale": 1.0,
+              "offset": 0.0,
+              "min_val": 0.0,
+              "max_val": 1.0,
+              "unit": "",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "TMM"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "VcuCommand",
+                "signal": "FanControl"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x201",
+            "children": [],
+            "metadata": {
+              "start_bit": 25,
+              "length": 1
+            }
+          },
+          {
+            "id": "DOC001.MSG_0x201.SIG_DiagService",
+            "type": "dbc_signal",
+            "content": {
+              "name": "DiagService",
+              "start_bit": 56,
+              "length": 8,
+              "scale": 1.0,
+              "offset": 0.0,
+              "min_val": 0.0,
+              "max_val": 255.0,
+              "unit": "",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "MCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "VcuCommand",
+                "signal": "DiagService"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x201",
+            "children": [],
+            "metadata": {
+              "start_bit": 56,
+              "length": 8
+            }
+          }
+        ],
+        "metadata": {}
+      },
+      "DOC001.MSG_0x201.SIG_TorqueDemand": {
+        "id": "DOC001.MSG_0x201.SIG_TorqueDemand",
+        "type": "dbc_signal",
+        "content": {
+          "name": "TorqueDemand",
+          "start_bit": 0,
+          "length": 16,
+          "scale": 0.1,
+          "offset": -500.0,
+          "min_val": -500.0,
+          "max_val": 500.0,
+          "unit": "Nm",
+          "comment": "Driver requested torque from VCU to MCU",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "MCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "VcuCommand",
+            "signal": "TorqueDemand"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x201",
+        "children": [],
+        "metadata": {
+          "start_bit": 0,
+          "length": 16
+        }
+      },
+      "DOC001.MSG_0x201.SIG_EnableRequest": {
+        "id": "DOC001.MSG_0x201.SIG_EnableRequest",
+        "type": "dbc_signal",
+        "content": {
+          "name": "EnableRequest",
+          "start_bit": 16,
+          "length": 1,
+          "scale": 1.0,
+          "offset": 0.0,
+          "min_val": 0.0,
+          "max_val": 1.0,
+          "unit": "",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "MCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "VcuCommand",
+            "signal": "EnableRequest"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x201",
+        "children": [],
+        "metadata": {
+          "start_bit": 16,
+          "length": 1
+        }
+      },
+      "DOC001.MSG_0x201.SIG_PumpControl": {
+        "id": "DOC001.MSG_0x201.SIG_PumpControl",
+        "type": "dbc_signal",
+        "content": {
+          "name": "PumpControl",
+          "start_bit": 24,
+          "length": 1,
+          "scale": 1.0,
+          "offset": 0.0,
+          "min_val": 0.0,
+          "max_val": 1.0,
+          "unit": "",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "TMM"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "VcuCommand",
+            "signal": "PumpControl"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x201",
+        "children": [],
+        "metadata": {
+          "start_bit": 24,
+          "length": 1
+        }
+      },
+      "DOC001.MSG_0x201.SIG_FanControl": {
+        "id": "DOC001.MSG_0x201.SIG_FanControl",
+        "type": "dbc_signal",
+        "content": {
+          "name": "FanControl",
+          "start_bit": 25,
+          "length": 1,
+          "scale": 1.0,
+          "offset": 0.0,
+          "min_val": 0.0,
+          "max_val": 1.0,
+          "unit": "",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "TMM"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "VcuCommand",
+            "signal": "FanControl"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x201",
+        "children": [],
+        "metadata": {
+          "start_bit": 25,
+          "length": 1
+        }
+      },
+      "DOC001.MSG_0x201.SIG_DiagService": {
+        "id": "DOC001.MSG_0x201.SIG_DiagService",
+        "type": "dbc_signal",
+        "content": {
+          "name": "DiagService",
+          "start_bit": 56,
+          "length": 8,
+          "scale": 1.0,
+          "offset": 0.0,
+          "min_val": 0.0,
+          "max_val": 255.0,
+          "unit": "",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "MCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "VcuCommand",
+            "signal": "DiagService"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x201",
+        "children": [],
+        "metadata": {
+          "start_bit": 56,
+          "length": 8
+        }
+      },
+      "DOC001.MSG_0x202": {
+        "id": "DOC001.MSG_0x202",
+        "type": "dbc_message",
+        "content": {
+          "name": "BatteryInfo",
+          "id": 514,
+          "dlc": 8,
+          "sender": "BMS",
+          "cycle_time": 500.0,
+          "comment": "Battery pack status and cell information"
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "BatteryInfo"
+          }
+        },
+        "parent_id": null,
+        "children": [
+          {
+            "id": "DOC001.MSG_0x202.SIG_StateOfCharge",
+            "type": "dbc_signal",
+            "content": {
+              "name": "StateOfCharge",
+              "start_bit": 0,
+              "length": 8,
+              "scale": 0.5,
+              "offset": 0.0,
+              "min_val": 0.0,
+              "max_val": 100.0,
+              "unit": "%",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "VCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "BatteryInfo",
+                "signal": "StateOfCharge"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x202",
+            "children": [],
+            "metadata": {
+              "start_bit": 0,
+              "length": 8
+            }
+          },
+          {
+            "id": "DOC001.MSG_0x202.SIG_CellVoltageMin",
+            "type": "dbc_signal",
+            "content": {
+              "name": "CellVoltageMin",
+              "start_bit": 8,
+              "length": 16,
+              "scale": 0.001,
+              "offset": 0.0,
+              "min_val": 2.5,
+              "max_val": 4.3,
+              "unit": "V",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "VCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "BatteryInfo",
+                "signal": "CellVoltageMin"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x202",
+            "children": [],
+            "metadata": {
+              "start_bit": 8,
+              "length": 16
+            }
+          },
+          {
+            "id": "DOC001.MSG_0x202.SIG_CellVoltageMax",
+            "type": "dbc_signal",
+            "content": {
+              "name": "CellVoltageMax",
+              "start_bit": 24,
+              "length": 16,
+              "scale": 0.001,
+              "offset": 0.0,
+              "min_val": 2.5,
+              "max_val": 4.3,
+              "unit": "V",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "VCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "BatteryInfo",
+                "signal": "CellVoltageMax"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x202",
+            "children": [],
+            "metadata": {
+              "start_bit": 24,
+              "length": 16
+            }
+          },
+          {
+            "id": "DOC001.MSG_0x202.SIG_IsolationResistance",
+            "type": "dbc_signal",
+            "content": {
+              "name": "IsolationResistance",
+              "start_bit": 40,
+              "length": 16,
+              "scale": 1.0,
+              "offset": 0.0,
+              "min_val": 0.0,
+              "max_val": 65000.0,
+              "unit": "kOhm",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "VCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "BatteryInfo",
+                "signal": "IsolationResistance"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x202",
+            "children": [],
+            "metadata": {
+              "start_bit": 40,
+              "length": 16
+            }
+          }
+        ],
+        "metadata": {}
+      },
+      "DOC001.MSG_0x202.SIG_StateOfCharge": {
+        "id": "DOC001.MSG_0x202.SIG_StateOfCharge",
+        "type": "dbc_signal",
+        "content": {
+          "name": "StateOfCharge",
+          "start_bit": 0,
+          "length": 8,
+          "scale": 0.5,
+          "offset": 0.0,
+          "min_val": 0.0,
+          "max_val": 100.0,
+          "unit": "%",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "VCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "BatteryInfo",
+            "signal": "StateOfCharge"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x202",
+        "children": [],
+        "metadata": {
+          "start_bit": 0,
+          "length": 8
+        }
+      },
+      "DOC001.MSG_0x202.SIG_CellVoltageMin": {
+        "id": "DOC001.MSG_0x202.SIG_CellVoltageMin",
+        "type": "dbc_signal",
+        "content": {
+          "name": "CellVoltageMin",
+          "start_bit": 8,
+          "length": 16,
+          "scale": 0.001,
+          "offset": 0.0,
+          "min_val": 2.5,
+          "max_val": 4.3,
+          "unit": "V",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "VCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "BatteryInfo",
+            "signal": "CellVoltageMin"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x202",
+        "children": [],
+        "metadata": {
+          "start_bit": 8,
+          "length": 16
+        }
+      },
+      "DOC001.MSG_0x202.SIG_CellVoltageMax": {
+        "id": "DOC001.MSG_0x202.SIG_CellVoltageMax",
+        "type": "dbc_signal",
+        "content": {
+          "name": "CellVoltageMax",
+          "start_bit": 24,
+          "length": 16,
+          "scale": 0.001,
+          "offset": 0.0,
+          "min_val": 2.5,
+          "max_val": 4.3,
+          "unit": "V",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "VCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "BatteryInfo",
+            "signal": "CellVoltageMax"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x202",
+        "children": [],
+        "metadata": {
+          "start_bit": 24,
+          "length": 16
+        }
+      },
+      "DOC001.MSG_0x202.SIG_IsolationResistance": {
+        "id": "DOC001.MSG_0x202.SIG_IsolationResistance",
+        "type": "dbc_signal",
+        "content": {
+          "name": "IsolationResistance",
+          "start_bit": 40,
+          "length": 16,
+          "scale": 1.0,
+          "offset": 0.0,
+          "min_val": 0.0,
+          "max_val": 65000.0,
+          "unit": "kOhm",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "VCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "BatteryInfo",
+            "signal": "IsolationResistance"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x202",
+        "children": [],
+        "metadata": {
+          "start_bit": 40,
+          "length": 16
+        }
+      },
+      "DOC001.MSG_0x203": {
+        "id": "DOC001.MSG_0x203",
+        "type": "dbc_message",
+        "content": {
+          "name": "ThermalStatus",
+          "id": 515,
+          "dlc": 8,
+          "sender": "TMM",
+          "cycle_time": 1000.0,
+          "comment": "Thermal management system status"
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "ThermalStatus"
+          }
+        },
+        "parent_id": null,
+        "children": [
+          {
+            "id": "DOC001.MSG_0x203.SIG_RadiatorTemp",
+            "type": "dbc_signal",
+            "content": {
+              "name": "RadiatorTemp",
+              "start_bit": 0,
+              "length": 8,
+              "scale": 1.0,
+              "offset": -40.0,
+              "min_val": -40.0,
+              "max_val": 215.0,
+              "unit": "degC",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "VCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "ThermalStatus",
+                "signal": "RadiatorTemp"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x203",
+            "children": [],
+            "metadata": {
+              "start_bit": 0,
+              "length": 8
+            }
+          },
+          {
+            "id": "DOC001.MSG_0x203.SIG_PumpSpeed",
+            "type": "dbc_signal",
+            "content": {
+              "name": "PumpSpeed",
+              "start_bit": 8,
+              "length": 16,
+              "scale": 0.1,
+              "offset": 0.0,
+              "min_val": 0.0,
+              "max_val": 6000.0,
+              "unit": "rpm",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "VCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "ThermalStatus",
+                "signal": "PumpSpeed"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x203",
+            "children": [],
+            "metadata": {
+              "start_bit": 8,
+              "length": 16
+            }
+          },
+          {
+            "id": "DOC001.MSG_0x203.SIG_FanSpeed",
+            "type": "dbc_signal",
+            "content": {
+              "name": "FanSpeed",
+              "start_bit": 24,
+              "length": 8,
+              "scale": 1.0,
+              "offset": 0.0,
+              "min_val": 0.0,
+              "max_val": 100.0,
+              "unit": "%",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "VCU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "ThermalStatus",
+                "signal": "FanSpeed"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x203",
+            "children": [],
+            "metadata": {
+              "start_bit": 24,
+              "length": 8
+            }
+          }
+        ],
+        "metadata": {}
+      },
+      "DOC001.MSG_0x203.SIG_RadiatorTemp": {
+        "id": "DOC001.MSG_0x203.SIG_RadiatorTemp",
+        "type": "dbc_signal",
+        "content": {
+          "name": "RadiatorTemp",
+          "start_bit": 0,
+          "length": 8,
+          "scale": 1.0,
+          "offset": -40.0,
+          "min_val": -40.0,
+          "max_val": 215.0,
+          "unit": "degC",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "VCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "ThermalStatus",
+            "signal": "RadiatorTemp"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x203",
+        "children": [],
+        "metadata": {
+          "start_bit": 0,
+          "length": 8
+        }
+      },
+      "DOC001.MSG_0x203.SIG_PumpSpeed": {
+        "id": "DOC001.MSG_0x203.SIG_PumpSpeed",
+        "type": "dbc_signal",
+        "content": {
+          "name": "PumpSpeed",
+          "start_bit": 8,
+          "length": 16,
+          "scale": 0.1,
+          "offset": 0.0,
+          "min_val": 0.0,
+          "max_val": 6000.0,
+          "unit": "rpm",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "VCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "ThermalStatus",
+            "signal": "PumpSpeed"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x203",
+        "children": [],
+        "metadata": {
+          "start_bit": 8,
+          "length": 16
+        }
+      },
+      "DOC001.MSG_0x203.SIG_FanSpeed": {
+        "id": "DOC001.MSG_0x203.SIG_FanSpeed",
+        "type": "dbc_signal",
+        "content": {
+          "name": "FanSpeed",
+          "start_bit": 24,
+          "length": 8,
+          "scale": 1.0,
+          "offset": 0.0,
+          "min_val": 0.0,
+          "max_val": 100.0,
+          "unit": "%",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "VCU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "ThermalStatus",
+            "signal": "FanSpeed"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x203",
+        "children": [],
+        "metadata": {
+          "start_bit": 24,
+          "length": 8
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "DOC001.MSG_0x181.SIG_MotorRPM",
+        "target": "DOC001.MSG_0x181",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x181.SIG_MotorTemp",
+        "target": "DOC001.MSG_0x181",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x182.SIG_BatteryVoltage",
+        "target": "DOC001.MSG_0x182",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x182.SIG_MotorCurrent",
+        "target": "DOC001.MSG_0x182",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x182.SIG_CoolantTemp",
+        "target": "DOC001.MSG_0x182",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x201.SIG_TorqueDemand",
+        "target": "DOC001.MSG_0x201",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x201.SIG_EnableRequest",
+        "target": "DOC001.MSG_0x201",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x201.SIG_PumpControl",
+        "target": "DOC001.MSG_0x201",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x201.SIG_FanControl",
+        "target": "DOC001.MSG_0x201",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x201.SIG_DiagService",
+        "target": "DOC001.MSG_0x201",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x202.SIG_StateOfCharge",
+        "target": "DOC001.MSG_0x202",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x202.SIG_CellVoltageMin",
+        "target": "DOC001.MSG_0x202",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x202.SIG_CellVoltageMax",
+        "target": "DOC001.MSG_0x202",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x202.SIG_IsolationResistance",
+        "target": "DOC001.MSG_0x202",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x203.SIG_RadiatorTemp",
+        "target": "DOC001.MSG_0x203",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x203.SIG_PumpSpeed",
+        "target": "DOC001.MSG_0x203",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x203.SIG_FanSpeed",
+        "target": "DOC001.MSG_0x203",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x181",
+        "target": "DOC001",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x182",
+        "target": "DOC001",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x201",
+        "target": "DOC001",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x202",
+        "target": "DOC001",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x203",
+        "target": "DOC001",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ]
+  },
+  "processing_info": {
+    "processor_name": "DBCProcessor",
+    "processing_time_s": 0.0012722015380859375,
+    "processed_at": "2026-07-06T20:08:25",
+    "schema_version": "2.0"
+  },
+  "statistics": {
+    "total_content_nodes": 22,
+    "total_relationships": 22,
+    "node_type_counts": {
+      "dbc_message": 5,
+      "dbc_signal": 17
+    },
+    "max_depth": 1
+  },
+  "_store_id": "9acfcc59b25fe2e1bd6b59644d6138081cb54794e6f9b886a9ad40eb0976bc9d",
+  "_stored_at": "2026-07-06T20:08:25.589446"
+}

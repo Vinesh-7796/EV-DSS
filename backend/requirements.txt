@@ -1,0 +1,9 @@
+# EV-DDSS Application Layer - Backend
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+loguru>=0.7.2
+python-dotenv>=1.0.1
+httpx>=0.28.0
+websockets>=12.0

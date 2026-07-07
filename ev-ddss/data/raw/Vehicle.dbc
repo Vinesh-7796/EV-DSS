@@ -1,0 +1,58 @@
+VERSION "1.0"
+
+
+NS_ :
+
+
+BS_:
+
+
+BU_: VCU MCU BMS TMM
+
+
+BO_ 385 MotorStatus: 8 MCU
+ SG_ MotorRPM : 0|16@1+ (0.125,0) [0|12000] "rpm" VCU
+ SG_ MotorTemp : 16|8@1+ (1,-40) [-40|215] "degC" VCU
+
+BO_ 386 HVStatus: 8 BMS
+ SG_ BatteryVoltage : 0|16@1+ (0.1,0) [0|500] "V" VCU,MCU
+ SG_ MotorCurrent : 16|16@1+ (0.1,-400) [-400|400] "A" MCU
+ SG_ CoolantTemp : 32|8@1+ (1,-40) [-40|215] "degC" VCU,TMM
+
+BO_ 513 VcuCommand: 8 VCU
+ SG_ TorqueDemand : 0|16@1+ (0.1,-500) [-500|500] "Nm" MCU
+ SG_ EnableRequest : 16|1@1+ (1,0) [0|1] "" MCU
+ SG_ PumpControl : 24|1@1+ (1,0) [0|1] "" TMM
+ SG_ FanControl : 25|1@1+ (1,0) [0|1] "" TMM
+ SG_ DiagService : 56|8@1+ (1,0) [0|255] "" MCU,BMS,TMM
+
+BO_ 514 BatteryInfo: 8 BMS
+ SG_ StateOfCharge : 0|8@1+ (0.5,0) [0|100] "%" VCU,MCU
+ SG_ CellVoltageMin : 8|16@1+ (0.001,0) [2.5|4.3] "V" VCU
+ SG_ CellVoltageMax : 24|16@1+ (0.001,0) [2.5|4.3] "V" VCU
+ SG_ IsolationResistance : 40|16@1+ (1,0) [0|65000] "kOhm" VCU
+
+BO_ 515 ThermalStatus: 8 TMM
+ SG_ RadiatorTemp : 0|8@1+ (1,-40) [-40|215] "degC" VCU
+ SG_ PumpSpeed : 8|16@1+ (0.1,0) [0|6000] "rpm" VCU
+ SG_ FanSpeed : 24|8@1+ (1,0) [0|100] "%" VCU
+
+
+CM_ BO_ 385 "Motor status information including RPM and temperature";
+CM_ BO_ 386 "High voltage system status from BMS";
+CM_ BO_ 513 "Vehicle control unit command messages";
+CM_ BO_ 514 "Battery pack status and cell information";
+CM_ BO_ 515 "Thermal management system status";
+CM_ SG_ 385 MotorRPM "Motor rotational speed measured by resolver";
+CM_ SG_ 386 BatteryVoltage "HV DC bus voltage at battery terminals";
+CM_ SG_ 513 TorqueDemand "Driver requested torque from VCU to MCU";
+CM_ BU_ VCU "Vehicle Control Unit - master controller";
+CM_ BU_ MCU "Motor Controller Unit - traction inverter";
+CM_ BU_ BMS "Battery Management System";
+CM_ BU_ TMM "Thermal Management Module";
+
+BA_ "GenMsgCycleTime" BO_ 385 100;
+BA_ "GenMsgCycleTime" BO_ 386 100;
+BA_ "GenMsgCycleTime" BO_ 513 100;
+BA_ "GenMsgCycleTime" BO_ 514 500;
+BA_ "GenMsgCycleTime" BO_ 515 1000;

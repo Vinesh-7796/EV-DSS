@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.whl
+dist/
+build/
+
+# Virtual Environment
+.venv/
+venv/
+env/
+virtualenv/
+
+# Environment
+.env
+!.env.example
+
+# Node
+node_modules/
+.vite/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Runtime
+*.lock
+*.pid
+
+# Data
+data/raw/*
+data/processed/*
+data/embeddings/*
+data/cache/*
+!data/.gitkeep
+
+# Output
+output/*
+!output/.gitkeep
+
+# Database
+*.db
+*.sqlite3
+
+# Testing
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Ruff
+.ruff_cache/
+
+# Mypy
+.mypy_cache/
+
+# Alembic
+alembic/versions/*
+!alembic/versions/.gitkeep
+
+# Secrets
+*.pem
+*.key
+*.cert
+
+# Temporary
+*.tmp
+*.temp
+*.bak
+
+# Ollama installer
+OllamaSetup.exe

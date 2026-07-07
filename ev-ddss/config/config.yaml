@@ -1,0 +1,101 @@
+# =============================================================================
+# EV Diagnostic Decision Support System - YAML Configuration
+# =============================================================================
+# Settings are resolved in order: defaults -> config.yaml -> environment variables
+
+application:
+  name: EV-DDSS
+  version: 0.1.0
+  host: ${APP_HOST:-0.0.0.0}
+  port: ${APP_PORT:-8000}
+  debug: ${APP_DEBUG:-false}
+  log_level: ${LOG_LEVEL:-INFO}
+
+database:
+  url: ${DATABASE_URL:-postgresql://user:password@localhost:5432/ev_ddss}
+  pool_size: 10
+  max_overflow: 20
+  pool_pre_ping: true
+  echo: false
+
+qdrant:
+  url: ${QDRANT_URL:-http://localhost:6333}
+  api_key: ${QDRANT_API_KEY:-}
+  timeout: ${QDRANT_TIMEOUT:-30}
+  prefer_grpc: false
+
+logging:
+  level: ${LOG_LEVEL:-INFO}
+  console: true
+  file: true
+  file_path: logs/ev-ddss.log
+  rotation: 10 MB
+  retention: 30 days
+  format: "<green>{time:YYYY-MM-DD HH:mm:ss.SSS}</green> | <level>{level: <8}</level> | <cyan>{name}</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> - <level>{message}</level>"
+
+# Future: Embedding model configuration
+embedding:
+  model: ${EMBEDDING_MODEL:-text-embedding-3-small}
+  dimension: ${EMBEDDING_DIMENSION:-1536}
+  device: ${EMBEDDING_DEVICE:-cpu}
+
+# Future: LLM configuration
+llm:
+  model: ${LLM_MODEL:-llama-3.2-3b-instruct}
+  temperature: ${LLM_TEMPERATURE:-0.1}
+  max_tokens: ${LLM_MAX_TOKENS:-2048}
+  device: ${LLM_DEVICE:-cpu}
+  context_length: ${LLM_CONTEXT_LENGTH:-8192}
+
+store:
+  json_enabled: true
+  json_path: ${STORE_JSON_PATH:-./data/store/json}
+  sql_enabled: ${STORE_SQL_ENABLED:-false}
+  image_enabled: true
+  image_path: ${STORE_IMAGE_PATH:-./data/store/images}
+
+# Retrieval engine
+retrieval:
+  chunk_size: ${RETRIEVAL_CHUNK_SIZE:-512}
+  chunk_overlap: ${RETRIEVAL_CHUNK_OVERLAP:-32}
+  embedding_model: ${EMBEDDING_MODEL:-all-MiniLM-L6-v2}
+  embedding_dimension: ${EMBEDDING_DIMENSION:-384}
+  top_k_vector: ${RETRIEVAL_TOP_K_VECTOR:-10}
+  top_k_graph: ${RETRIEVAL_TOP_K_GRAPH:-10}
+  top_k_sql: ${RETRIEVAL_TOP_K_SQL:-10}
+  top_k_image: ${RETRIEVAL_TOP_K_IMAGE:-5}
+  max_context_tokens: ${RETRIEVAL_MAX_CONTEXT:-4096}
+  enable_vector: ${RETRIEVAL_ENABLE_VECTOR:-true}
+  enable_graph: ${RETRIEVAL_ENABLE_GRAPH:-true}
+  enable_sql: ${RETRIEVAL_ENABLE_SQL:-true}
+  enable_image: ${RETRIEVAL_ENABLE_IMAGE:-true}
+  vector_score_threshold: ${RETRIEVAL_SCORE_THRESHOLD:-0.0}
+
+# LLM Orchestration Engine
+reasoning:
+  runtime: ${REASONING_RUNTIME:-ollama}
+  model: ${REASONING_MODEL:-qwen3:8b}
+  temperature: ${REASONING_TEMPERATURE:-0.1}
+  top_p: ${REASONING_TOP_P:-0.9}
+  max_tokens: ${REASONING_MAX_TOKENS:-2048}
+  context_window: ${REASONING_CONTEXT_WINDOW:-8192}
+  system_prompt: ${REASONING_SYSTEM_PROMPT:-"You are an expert EV diagnostic assistant."}
+  max_context_tokens: ${REASONING_MAX_CONTEXT:-4096}
+  deduplicate_context: ${REASONING_DEDUP:-true}
+  ollama_url: ${OLLAMA_URL:-http://localhost:11434}
+  openai_url: "${REASONING_OPENAI_URL:-}"
+  openai_api_key: "${REASONING_OPENAI_KEY:-}"
+  openai_model: "${REASONING_OPENAI_MODEL:-}"
+  request_timeout_s: ${REASONING_TIMEOUT:-120}
+  strict_validation: ${REASONING_STRICT:-true}
+  retry_on_parse_failure: ${REASONING_RETRY:-true}
+  max_retries: ${REASONING_MAX_RETRIES:-2}
+  template_directory: "${REASONING_TEMPLATE_DIR:-}"
+
+# Future: Data paths
+data:
+  raw: ${DATA_RAW_PATH:-./data/raw}
+  processed: ${DATA_PROCESSED_PATH:-./data/processed}
+  embeddings: ${DATA_EMBEDDINGS_PATH:-./data/embeddings}
+  images: ${DATA_IMAGES_PATH:-./data/images}
+  cache: ${DATA_CACHE_PATH:-./data/cache}

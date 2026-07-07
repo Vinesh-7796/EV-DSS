@@ -1,0 +1,244 @@
+{
+  "source": "a.dbc",
+  "type": "dbc",
+  "metadata": {
+    "filename": "a.dbc",
+    "file_size": 85,
+    "checksum": "3fa279a9d0d5d118cb4b216a6b1214cd02cb4527d710e606a0c0037e04c010c5",
+    "page_count": 0,
+    "sheet_count": 0,
+    "message_count": 1,
+    "image_width": 0,
+    "image_height": 0,
+    "image_format": "",
+    "processed_at": "2026-07-06T20:19:54",
+    "processing_time_s": 8.320808410644531e-05
+  },
+  "sections": [
+    {
+      "id": "msg_a_dbc",
+      "title": "Message 0x64 (a_dbc)",
+      "level": 2,
+      "page_number": 0,
+      "parent_id": null,
+      "elements": [
+        {
+          "type": "paragraph",
+          "content": "DLC: 8 | Sender: ECU | Cycle: N/A ms",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "  Signal X: bit 0, len 8, scale 1.0, offset 0.0 ",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        }
+      ],
+      "subsections": []
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "chunks": [
+    {
+      "id": "chunk_msg_a_dbc",
+      "text": "Message 0x64 (a_dbc): 1 signals. X (bit 0, 8 bits, 1.0)",
+      "section_id": "msg_a_dbc",
+      "section_title": "a_dbc",
+      "chapter": "",
+      "page_number": 0,
+      "source_file": "a.dbc",
+      "metadata": {
+        "message_id": 100,
+        "dlc": 8,
+        "sender": "ECU"
+      }
+    }
+  ],
+  "raw_text": "// DBC: a_dbc (0x64) DLC=8\n  X: bit=0 len=8 scale=1.0 off=0.0 []",
+  "content_nodes": [
+    {
+      "id": "DOC001.MSG_0x64",
+      "type": "dbc_message",
+      "content": {
+        "name": "a_dbc",
+        "id": 100,
+        "dlc": 8,
+        "sender": "ECU",
+        "cycle_time": null,
+        "comment": ""
+      },
+      "reference": {
+        "type": "dbc",
+        "location": {
+          "message": "a_dbc"
+        }
+      },
+      "parent_id": null,
+      "children": [
+        {
+          "id": "DOC001.MSG_0x64.SIG_X",
+          "type": "dbc_signal",
+          "content": {
+            "name": "X",
+            "start_bit": 0,
+            "length": 8,
+            "scale": 1.0,
+            "offset": 0.0,
+            "min_val": 0.0,
+            "max_val": 255.0,
+            "unit": "",
+            "comment": "",
+            "byte_order": "big_endian",
+            "value_type": "unsigned",
+            "receivers": [
+              "ECU"
+            ]
+          },
+          "reference": {
+            "type": "dbc",
+            "location": {
+              "message": "a_dbc",
+              "signal": "X"
+            }
+          },
+          "parent_id": "DOC001.MSG_0x64",
+          "children": [],
+          "metadata": {
+            "start_bit": 0,
+            "length": 8
+          }
+        }
+      ],
+      "metadata": {}
+    }
+  ],
+  "relationship_graph": {
+    "nodes": {
+      "DOC001.MSG_0x64": {
+        "id": "DOC001.MSG_0x64",
+        "type": "dbc_message",
+        "content": {
+          "name": "a_dbc",
+          "id": 100,
+          "dlc": 8,
+          "sender": "ECU",
+          "cycle_time": null,
+          "comment": ""
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "a_dbc"
+          }
+        },
+        "parent_id": null,
+        "children": [
+          {
+            "id": "DOC001.MSG_0x64.SIG_X",
+            "type": "dbc_signal",
+            "content": {
+              "name": "X",
+              "start_bit": 0,
+              "length": 8,
+              "scale": 1.0,
+              "offset": 0.0,
+              "min_val": 0.0,
+              "max_val": 255.0,
+              "unit": "",
+              "comment": "",
+              "byte_order": "big_endian",
+              "value_type": "unsigned",
+              "receivers": [
+                "ECU"
+              ]
+            },
+            "reference": {
+              "type": "dbc",
+              "location": {
+                "message": "a_dbc",
+                "signal": "X"
+              }
+            },
+            "parent_id": "DOC001.MSG_0x64",
+            "children": [],
+            "metadata": {
+              "start_bit": 0,
+              "length": 8
+            }
+          }
+        ],
+        "metadata": {}
+      },
+      "DOC001.MSG_0x64.SIG_X": {
+        "id": "DOC001.MSG_0x64.SIG_X",
+        "type": "dbc_signal",
+        "content": {
+          "name": "X",
+          "start_bit": 0,
+          "length": 8,
+          "scale": 1.0,
+          "offset": 0.0,
+          "min_val": 0.0,
+          "max_val": 255.0,
+          "unit": "",
+          "comment": "",
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "receivers": [
+            "ECU"
+          ]
+        },
+        "reference": {
+          "type": "dbc",
+          "location": {
+            "message": "a_dbc",
+            "signal": "X"
+          }
+        },
+        "parent_id": "DOC001.MSG_0x64",
+        "children": [],
+        "metadata": {
+          "start_bit": 0,
+          "length": 8
+        }
+      }
+    },
+    "edges": [
+      {
+        "source": "DOC001.MSG_0x64",
+        "target": "DOC001",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      },
+      {
+        "source": "DOC001.MSG_0x64.SIG_X",
+        "target": "DOC001.MSG_0x64",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ]
+  },
+  "processing_info": {
+    "processor_name": "DBCProcessor",
+    "processing_time_s": 0.0001277923583984375,
+    "processed_at": "2026-07-06T20:19:54",
+    "schema_version": "2.0"
+  },
+  "statistics": {
+    "total_content_nodes": 2,
+    "total_relationships": 2,
+    "node_type_counts": {
+      "dbc_message": 1,
+      "dbc_signal": 1
+    },
+    "max_depth": 1
+  },
+  "_schema_version": "2.0",
+  "_generated_at": "2026-07-06T20:19:54.555587"
+}

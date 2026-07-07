@@ -1,0 +1,37 @@
+<!-- template_name: can_signal, template_version: 1.0.0, description: CAN bus signal and message analysis, supported_intents: can_signal -->
+{{ system_prompt }}
+
+{{ engineering_rules }}
+
+{% if json_mode_instruction %}{{ json_mode_instruction }}
+
+{% endif %}## Technical Context
+
+{{ context }}
+
+{% if conversation_history %}
+## Conversation History
+
+{{ conversation_history }}
+
+{% endif %}
+## Task
+
+A technician is analysing CAN bus signals or messages.  Using ONLY the
+context above, answer their question.
+
+Technician query: {{ query }}
+
+## Output Format
+
+You MUST respond with valid JSON ONLY — no markdown, no explanations outside
+the JSON structure.  Follow this exact schema:
+
+{{ diagnostic_response_schema }}
+
+Ensure:
+- "possible_causes" includes signal integrity issues, wiring faults, ECU faults
+- "inspection_steps" reference specific CAN messages, signals, and expected values
+- "recommended_actions" address harness, termination, or ECU-level fixes
+- "referenced_entities" includes CAN message IDs and signal names
+- "citations" maps each claim to a source

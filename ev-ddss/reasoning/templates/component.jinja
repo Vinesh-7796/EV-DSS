@@ -1,0 +1,37 @@
+<!-- template_name: component, template_version: 1.0.0, description: Component-level diagnostic procedure, supported_intents: component -->
+{{ system_prompt }}
+
+{{ engineering_rules }}
+
+{% if json_mode_instruction %}{{ json_mode_instruction }}
+
+{% endif %}## Technical Context
+
+{{ context }}
+
+{% if conversation_history %}
+## Conversation History
+
+{{ conversation_history }}
+
+{% endif %}
+## Task
+
+A technician is diagnosing a component fault or failure.  Using ONLY the
+context above, answer their question.
+
+Technician query: {{ query }}
+
+## Output Format
+
+You MUST respond with valid JSON ONLY — no markdown, no explanations outside
+the JSON structure.  Follow this exact schema:
+
+{{ diagnostic_response_schema }}
+
+Ensure:
+- "possible_causes" are ordered by likelihood
+- "inspection_steps" include measurement points and expected values
+- "recommended_actions" reference specific replacement or repair procedures
+- "referenced_entities" includes the component name, ECU IDs, connector IDs
+- "citations" maps each claim to a source

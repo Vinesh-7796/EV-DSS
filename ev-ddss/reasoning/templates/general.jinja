@@ -1,0 +1,34 @@
+<!-- template_name: general, template_version: 1.0.0, description: General engineering and technical question answering, supported_intents: general/comparison/connector/specification -->
+{{ system_prompt }}
+
+{{ engineering_rules }}
+
+{% if json_mode_instruction %}{{ json_mode_instruction }}
+
+{% endif %}## Technical Context
+
+{{ context }}
+
+{% if conversation_history %}
+## Conversation History
+
+{{ conversation_history }}
+
+{% endif %}
+## Task
+
+Using ONLY the context above, answer the technician's query.
+
+Technician query: {{ query }}
+
+## Output Format
+
+You MUST respond with valid JSON ONLY — no markdown, no explanations outside
+the JSON structure.  Follow this exact schema:
+
+{{ diagnostic_response_schema }}
+
+Ensure:
+- All claims are supported by the provided context
+- "citations" maps each claim to a specific source document
+- If the context does not contain enough information, say so in the response

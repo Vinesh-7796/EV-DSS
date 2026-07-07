@@ -1,0 +1,37 @@
+<!-- template_name: error_code, template_version: 1.0.0, description: Diagnostic trouble code analysis and troubleshooting, supported_intents: error_code -->
+{{ system_prompt }}
+
+{{ engineering_rules }}
+
+{% if json_mode_instruction %}{{ json_mode_instruction }}
+
+{% endif %}## Technical Context
+
+{{ context }}
+
+{% if conversation_history %}
+## Conversation History
+
+{{ conversation_history }}
+
+{% endif %}
+## Task
+
+A technician is investigating a diagnostic trouble code.  Using ONLY the
+context above, answer their question.
+
+Technician query: {{ query }}
+
+## Output Format
+
+You MUST respond with valid JSON ONLY — no markdown, no explanations outside
+the JSON structure.  Follow this exact schema:
+
+{{ diagnostic_response_schema }}
+
+Ensure:
+- "possible_causes" is ordered most likely first
+- "inspection_steps" are specific, measurable actions
+- "recommended_actions" are concrete repair steps
+- "referenced_entities" includes DTC codes and ECU IDs
+- "citations" maps each claim to a source
