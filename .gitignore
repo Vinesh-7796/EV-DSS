@@ -84,3 +84,5 @@ alembic/versions/*
 
 # Ollama installer
 OllamaSetup.exe
+
+README.md
