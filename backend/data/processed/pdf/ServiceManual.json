@@ -11,12 +11,12 @@
     "image_width": 0,
     "image_height": 0,
     "image_format": "",
-    "processed_at": "2026-07-09T17:14:38",
-    "processing_time_s": 0.45111632347106934
+    "processed_at": "2026-07-09T20:53:09",
+    "processing_time_s": 0.8699944019317627
   },
   "sections": [
     {
-      "id": "646b279b",
+      "id": "82b98ed1",
       "title": "EV DIAGNOSTIC DECISION SUPPORT SYSTEM",
       "level": 1,
       "page_number": 1,
@@ -25,7 +25,7 @@
       "subsections": []
     },
     {
-      "id": "b8cc2c39",
+      "id": "0d0ee5a8",
       "title": "SERVICE MANUAL",
       "level": 1,
       "page_number": 1,
@@ -76,11 +76,11 @@
       ],
       "subsections": [
         {
-          "id": "aedcce50",
+          "id": "d2778088",
           "title": "TABLE OF CONTENTS",
           "level": 2,
           "page_number": 2,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -443,11 +443,11 @@
           "subsections": []
         },
         {
-          "id": "dd57b9c7",
+          "id": "c48c4295",
           "title": "1. Vehicle Overview & System Description",
           "level": 2,
           "page_number": 3,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -719,11 +719,11 @@
           "subsections": []
         },
         {
-          "id": "6bee2bfb",
+          "id": "f098d649",
           "title": "2. High Voltage (HV) Architecture",
           "level": 2,
           "page_number": 4,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -799,11 +799,11 @@
           "subsections": []
         },
         {
-          "id": "103c68eb",
+          "id": "7138374f",
           "title": "3. Traction Motor / Drive Unit",
           "level": 2,
           "page_number": 5,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -1060,11 +1060,11 @@
           ],
           "subsections": [
             {
-              "id": "7c598a28",
+              "id": "fd552873",
               "title": "3.1 Motor Winding Test",
               "level": 4,
               "page_number": 5,
-              "parent_id": "103c68eb",
+              "parent_id": "7138374f",
               "elements": [
                 {
                   "type": "paragraph",
@@ -1107,11 +1107,11 @@
           ]
         },
         {
-          "id": "5555fe7c",
+          "id": "a08b0720",
           "title": "4. Motor Controller / Inverter (MCU)",
           "level": 2,
           "page_number": 6,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -1340,11 +1340,11 @@
           ],
           "subsections": [
             {
-              "id": "5224bba5",
+              "id": "d44cac0e",
               "title": "4.1 MCU Power Supply Check",
               "level": 4,
               "page_number": 6,
-              "parent_id": "5555fe7c",
+              "parent_id": "a08b0720",
               "elements": [
                 {
                   "type": "paragraph",
@@ -1387,11 +1387,11 @@
           ]
         },
         {
-          "id": "3a216587",
+          "id": "856d54f0",
           "title": "5. Cooling System / Thermal Management",
           "level": 2,
           "page_number": 7,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -1410,11 +1410,11 @@
           ],
           "subsections": [
             {
-              "id": "fa2dc49c",
+              "id": "135703a3",
               "title": "5.1 Coolant Level Check",
               "level": 4,
               "page_number": 7,
-              "parent_id": "3a216587",
+              "parent_id": "856d54f0",
               "elements": [
                 {
                   "type": "paragraph",
@@ -1448,11 +1448,11 @@
               "subsections": []
             },
             {
-              "id": "eec68850",
+              "id": "8f1dfe79",
               "title": "5.2 Pump Function Test",
               "level": 4,
               "page_number": 7,
-              "parent_id": "3a216587",
+              "parent_id": "856d54f0",
               "elements": [
                 {
                   "type": "paragraph",
@@ -1495,11 +1495,11 @@
           ]
         },
         {
-          "id": "580b33d7",
+          "id": "552c363a",
           "title": "6. Battery Pack / HV Accumulator",
           "level": 2,
           "page_number": 8,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -1518,11 +1518,11 @@
           ],
           "subsections": [
             {
-              "id": "827d3015",
+              "id": "223dde54",
               "title": "6.1 HV Isolation Test",
               "level": 4,
               "page_number": 8,
-              "parent_id": "580b33d7",
+              "parent_id": "552c363a",
               "elements": [
                 {
                   "type": "paragraph",
@@ -1558,11 +1558,11 @@
           ]
         },
         {
-          "id": "8639f824",
+          "id": "9a032205",
           "title": "7. CAN Communication & Signal Overview",
           "level": 2,
           "page_number": 9,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -2036,11 +2036,11 @@
           ],
           "subsections": [
             {
-              "id": "a247716d",
+              "id": "b2baacea",
               "title": "7.1 CAN Diagnostics",
               "level": 4,
               "page_number": 9,
-              "parent_id": "8639f824",
+              "parent_id": "9a032205",
               "elements": [
                 {
                   "type": "paragraph",
@@ -2069,11 +2069,11 @@
           ]
         },
         {
-          "id": "b436b4d4",
+          "id": "b7b950bc",
           "title": "8. Connector Identification & Pinout",
           "level": 2,
           "page_number": 10,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -2821,11 +2821,11 @@
           "subsections": []
         },
         {
-          "id": "0ba71417",
+          "id": "b91213c6",
           "title": "9. Fuse & Relay Layout",
           "level": 2,
           "page_number": 11,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -3041,11 +3041,11 @@
           "subsections": []
         },
         {
-          "id": "8ced33e6",
+          "id": "993334ea",
           "title": "10. Diagnostic Error Code Reference",
           "level": 2,
           "page_number": 12,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -3163,19 +3163,19 @@
           "subsections": []
         },
         {
-          "id": "de7b68c6",
+          "id": "7bf9471b",
           "title": "11. Troubleshooting Procedures",
           "level": 2,
           "page_number": 13,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [],
           "subsections": [
             {
-              "id": "ce3bba70",
+              "id": "5575ea40",
               "title": "11.1 P0A94 - Motor Does Not Rotate",
               "level": 4,
               "page_number": 13,
-              "parent_id": "de7b68c6",
+              "parent_id": "7bf9471b",
               "elements": [
                 {
                   "type": "paragraph",
@@ -3405,11 +3405,11 @@
               "subsections": []
             },
             {
-              "id": "68fba538",
+              "id": "93d01da2",
               "title": "11.2 P1C21 - Overtemperature",
               "level": 4,
               "page_number": 13,
-              "parent_id": "de7b68c6",
+              "parent_id": "7bf9471b",
               "elements": [
                 {
                   "type": "paragraph",
@@ -3457,11 +3457,11 @@
               "subsections": []
             },
             {
-              "id": "84ff7632",
+              "id": "e0abeee5",
               "title": "11.3 P2B07 - CAN Failure",
               "level": 4,
               "page_number": 13,
-              "parent_id": "de7b68c6",
+              "parent_id": "7bf9471b",
               "elements": [
                 {
                   "type": "paragraph",
@@ -3502,11 +3502,11 @@
               "subsections": []
             },
             {
-              "id": "f7282c24",
+              "id": "5f0f73b1",
               "title": "11.4 P3F10 - Cooling Degraded",
               "level": 4,
               "page_number": 13,
-              "parent_id": "de7b68c6",
+              "parent_id": "7bf9471b",
               "elements": [
                 {
                   "type": "paragraph",
@@ -3549,11 +3549,11 @@
           ]
         },
         {
-          "id": "bc5cafa0",
+          "id": "8ba93afd",
           "title": "12. Preventive Maintenance",
           "level": 2,
           "page_number": 14,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -3726,11 +3726,11 @@
           ],
           "subsections": [
             {
-              "id": "40b3a864",
+              "id": "b8cfd7a2",
               "title": "12.1 Connector Inspection",
               "level": 4,
               "page_number": 14,
-              "parent_id": "bc5cafa0",
+              "parent_id": "8ba93afd",
               "elements": [
                 {
                   "type": "paragraph",
@@ -3764,11 +3764,11 @@
               "subsections": []
             },
             {
-              "id": "0a719e27",
+              "id": "7334bdad",
               "title": "12.2 Coolant Replacement",
               "level": 4,
               "page_number": 14,
-              "parent_id": "bc5cafa0",
+              "parent_id": "8ba93afd",
               "elements": [
                 {
                   "type": "paragraph",
@@ -3804,11 +3804,11 @@
           ]
         },
         {
-          "id": "2a218a9c",
+          "id": "bd31db70",
           "title": "Appendix A: Schematic Reference",
           "level": 2,
           "page_number": 15,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -3828,11 +3828,11 @@
           "subsections": []
         },
         {
-          "id": "735b03da",
+          "id": "d769f681",
           "title": "Appendix B: Torque Specifications",
           "level": 2,
           "page_number": 16,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -4034,11 +4034,11 @@
           "subsections": []
         },
         {
-          "id": "55b93afd",
+          "id": "651340d3",
           "title": "Appendix C: Recommended Tools",
           "level": 2,
           "page_number": 17,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -4212,11 +4212,11 @@
           "subsections": []
         },
         {
-          "id": "cd90cef2",
+          "id": "14ae49c5",
           "title": "Appendix D: Abbreviations",
           "level": 2,
           "page_number": 18,
-          "parent_id": "b8cc2c39",
+          "parent_id": "0d0ee5a8",
           "elements": [
             {
               "type": "paragraph",
@@ -5425,7 +5425,7 @@
     {
       "id": "chunk_1",
       "text": "EV DIAGNOSTIC DECISION SUPPORT SYSTEM",
-      "section_id": "646b279b",
+      "section_id": "82b98ed1",
       "section_title": "EV DIAGNOSTIC DECISION SUPPORT SYSTEM",
       "chapter": "EV DIAGNOSTIC DECISION SUPPORT SYSTEM",
       "page_number": 1,
@@ -5438,7 +5438,7 @@
     {
       "id": "chunk_2",
       "text": "Traction Motor / Inverter / HV Thermal System\nDocument No: EV-DDSS-SM-2026-002 | Revision: B | Date: July 2026\nClassification: CONFIDENTIAL | Supersedes: EV-DDSS-SM-2026-001 (Rev A)\nThis service manual provides diagnostic and repair information for the high-voltage traction system. All procedures must be performed by\nqualified HV technicians with appropriate PPE. Refer to Engineering Database (EV-DDSS-DB-2026) for component specifications and\nHV_Power_Distribution_Schematic_v2.png for wiring topology.",
-      "section_id": "b8cc2c39",
+      "section_id": "0d0ee5a8",
       "section_title": "SERVICE MANUAL",
       "chapter": "SERVICE MANUAL",
       "page_number": 1,
@@ -5451,378 +5451,378 @@
     {
       "id": "chunk_3",
       "text": "1.\nVehicle Overview & System Description\n3\n2.\nHigh Voltage (HV) Architecture\n4\n3.\nTraction Motor / Drive Unit\n6\n4.\nMotor Controller / Inverter (MCU)\n8\n5.\nCooling System / Thermal Management\n10\n6.\nBattery Pack / HV Accumulator\n12\n7.\nCAN Communication & Signal Overview\n14\n8.\nConnector Identification & Pinout\n16\n9.\nFuse & Relay Layout\n19\n10\n.\nDiagnostic Error Code Reference\n20\n11\n.\nTroubleshooting Procedures\n23\n12\n.\nPreventive Maintenance & Inspection\n28\nA.\nAppendix: Schematic Reference\n31\nB.\nAppendix: Torque Specifications\n32\nC.\nAppendix: Recommended Tools\n33\nD.\nAppendix: Abbreviations\n34",
-      "section_id": "aedcce50",
+      "section_id": "d2778088",
       "section_title": "TABLE OF CONTENTS",
       "chapter": "SERVICE MANUAL",
       "page_number": 2,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_4",
       "text": "The EV-DDSS demonstrator is a B-segment FWD electric vehicle with a PMSM Traction Motor, liquid-cooled Battery Pack (NMC,\n355V nominal), and CAN 2.0B architecture at 500 kbps. The VCM (VCU) coordinates all subsystems including torque demand,\nthermal management, and fault handling.\nTable 1.1: Vehicle Specifications\nParameter\nValue\nUnit\nVehicle Mass (kerb)\n1,450\nkg\nGross Vehicle Weight\n1,820\nkg\nTop Speed\n140\nkm/h\nNominal HV Voltage\n355\nV DC\nBattery Capacity\n42\nkWh\nMotor Peak Power\n120\nkW\nMotor Peak Torque\n280\nNm\nCoolant\nG12 EVO 50/50\n-\nCAN Bit Rate\n500\nkbps\nThe ECU network includes Vehicle Controller (VCU), Motor Controller (MCU/Inverter), BMS, and TMM. Diagnostic interface via\nCAN ID 0x201. Freeze-frame data includes BatteryVoltage, MotorRPM, CoolantTemp.\nNOTE:\nThis manual uses multiple naming conventions (e.g., Motor Controller / MCU / Traction Inverter). See Appendix D.",
-      "section_id": "dd57b9c7",
+      "section_id": "c48c4295",
       "section_title": "1. Vehicle Overview & System Description",
       "chapter": "SERVICE MANUAL",
       "page_number": 3,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_5",
       "text": "Nominal 355V DC (250-410V range). Three domains: Battery Pack, Motor Controller (inverter), Traction Motor. Main HV circuit\nprotected by Battery Main Fuse (250A gR) in Battery Pack junction box. Auxiliary Coolant Pump circuit via Auxiliary Fuse F21 (50A,\ncabin slot 21).\nContactor control: Relay K2 (Main Positive HV) and Relay K5 (Pre-charge/Cooling Pump LV). Pre-charge via K5 resistor, closes K2\nwhen >90% BatteryVoltage reached within 500ms.\nBattery Pack -> Fuse F18 -> Relay K2 -> Connector C21 -> MCU -> Connector C35 -> Traction Motor\nWARNING:\nHV system up to 410V. Verify de-energized before service. Measure C21 pin1-pin2. Wait 5 min discharge. CAT III\nmeter. Class 00 gloves.\nC42 Control Connector (LV) carries CAN, resolver, temp sensors, 12V. See Section 8.",
-      "section_id": "6bee2bfb",
+      "section_id": "f098d649",
       "section_title": "2. High Voltage (HV) Architecture",
       "chapter": "SERVICE MANUAL",
       "page_number": 4,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_6",
       "text": "PMSM-IPM, 120kW/280Nm, resolver (Sin/Cos 2-pole), 3x NTC thermistors in stator. MotorRPM on 0x181 (0.125 rpm/bit, 0-12000).\nMotorCurrent on 0x182 (0.1A/bit, -400 to +400A).\nTable 3.1: Motor Parameters\nParameter\nValue\nUnit\nType\nPMSM-IPM\n-\nPeak Power\n120\nkW\nContinuous Power\n60\nkW\nPeak Torque\n280\nNm\nMax RPM\n12,000\nrpm\nPole Pairs\n4 (8 poles)\n-\nStator R\n0.025\nOhm\nLd/Lq\n0.12/0.28\nmH\nInsulation\nClass H (180C)\n-\nWeight\n52\nkg",
-      "section_id": "103c68eb",
+      "section_id": "7138374f",
       "section_title": "3. Traction Motor / Drive Unit",
       "chapter": "SERVICE MANUAL",
       "page_number": 5,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_7",
       "text": "1. De-energize HV. Disconnect C35.\n2. 4-wire DMM: U-V, V-W, W-U. Expected 0.025 Ohm ±10%.\n3. Megohmmeter 500V: min 5 MOhm phase-to-ground.\n4. Imbalance >5%: replace Traction Motor.\n5. C42 resolver check: pins 1-2 and 3-4 = 20-40 Ohm.",
-      "section_id": "7c598a28",
+      "section_id": "fd552873",
       "section_title": "3.1 Motor Winding Test",
       "chapter": "SERVICE MANUAL > 3. Traction Motor / Drive Unit",
       "page_number": 5,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 4,
-        "parent_id": "103c68eb"
+        "parent_id": "7138374f"
       }
     },
     {
       "id": "chunk_8",
       "text": "PWM IGBT inverter, 1200V/600A modules, 10kHz switching. FOC with MTPA. Receives torque demand via 0x201 (bytes 0-1,\n0.1Nm/bit). Monitors BatteryVoltage (0x182), MotorRPM (0x181), CoolantTemp (0x182), MotorCurrent (0x182).\nTable 4.1: MCU Specs\nParameter\nValue\nUnit\nInput Voltage\n250-410\nV DC\nContinuous Current\n320\nA RMS\nPeak Current\n400\nA RMS\nSw Freq\n10 (5-12 var)\nkHz\nIGBT\n1200V/600A\n-\nEfficiency\n97\n%\nDC Link Cap\n1200\nuF\nWeight\n8.5\nkg\nWARNING:\nDC link capacitors retain up to 410V for 5 min. Verify C21 pins 1-2 < 5V before opening.",
-      "section_id": "5555fe7c",
+      "section_id": "a08b0720",
       "section_title": "4. Motor Controller / Inverter (MCU)",
       "chapter": "SERVICE MANUAL",
       "page_number": 6,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_9",
       "text": "1. Check F18 (< 0.5 Ohm).\n2. Close K2 (listen for click, coil ~25 Ohm).\n3. Measure C21 pins 1-2: 320-390V.\n4. Check 12V at C42 pin 5 (11.5-13.5V).\n5. CAN at C42 pins 7-8. Monitor 0x181/0x182.",
-      "section_id": "5224bba5",
+      "section_id": "d44cac0e",
       "section_title": "4.1 MCU Power Supply Check",
       "chapter": "SERVICE MANUAL > 4. Motor Controller / Inverter (MCU)",
       "page_number": 6,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 4,
-        "parent_id": "5555fe7c"
+        "parent_id": "a08b0720"
       }
     },
     {
       "id": "chunk_10",
       "text": "Water-glycol (G12 EVO, 6.5L), electric Electric Pump (18L/min). Radiator fan. F21 Coolant Pump (50A), Coolant Relay.\nCoolantTemp on 0x182 (byte 4, scale 1, offset -40C, range -40 to +215C). Normal: 50-85C. Warning: >90C. Shutdown: >105C.",
-      "section_id": "3a216587",
+      "section_id": "856d54f0",
       "section_title": "5. Cooling System / Thermal Management",
       "chapter": "SERVICE MANUAL",
       "page_number": 7,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_11",
       "text": "1. Level surface. HV de-energized.\n2. Expansion tank: between MIN-MAX.\n3. Color: purple (G12 EVO). Brown = contaminated.\n4. Glycol 48-52% via refractometer.",
-      "section_id": "fa2dc49c",
+      "section_id": "135703a3",
       "section_title": "5.1 Coolant Level Check",
       "chapter": "SERVICE MANUAL > 5. Cooling System / Thermal Management",
       "page_number": 7,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 4,
-        "parent_id": "3a216587"
+        "parent_id": "856d54f0"
       }
     },
     {
       "id": "chunk_12",
       "text": "1. Verify F21.\n2. Activate K5 via 0x201 byte 3=0x01.\n3. Listen for pump. Flow ~18L/min.\n4. Monitor CoolantTemp on 0x182.\n5. Pump motor resistance: 0.8-1.2 Ohm.",
-      "section_id": "eec68850",
+      "section_id": "8f1dfe79",
       "section_title": "5.2 Pump Function Test",
       "chapter": "SERVICE MANUAL > 5. Cooling System / Thermal Management",
       "page_number": 7,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 4,
-        "parent_id": "3a216587"
+        "parent_id": "856d54f0"
       }
     },
     {
       "id": "chunk_13",
       "text": "NMC 622, 96s1p (12 modules x 8 cells), 355V nom, 42kWh total/37.8kWh usable (10-95% SOC). BMS monitors cell V (±2mV),\npack I (shunt, ±0.5%), temp (6 NTC/module). BatteryVoltage on 0x182 (bytes 2-3, bit 16, scale 0.1V/bit).",
-      "section_id": "580b33d7",
+      "section_id": "552c363a",
       "section_title": "6. Battery Pack / HV Accumulator",
       "chapter": "SERVICE MANUAL",
       "page_number": 8,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_14",
       "text": "1. De-energize. Open service disconnect. Wait 5 min.\n2. Megohmmeter 500V: HV+ to chassis, HV- to chassis.\n3. Min 500 Ohm/V = 177.5 kOhm at 355V.\n4. If < 100 kOhm: inspect for coolant leakage.",
-      "section_id": "827d3015",
+      "section_id": "223dde54",
       "section_title": "6.1 HV Isolation Test",
       "chapter": "SERVICE MANUAL > 6. Battery Pack / HV Accumulator",
       "page_number": 8,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 4,
-        "parent_id": "580b33d7"
+        "parent_id": "552c363a"
       }
     },
     {
       "id": "chunk_15",
       "text": "500 kbps CAN 2.0B, single backbone. 120 Ohm termination at each end (VCU, MCU). Stubs < 0.3m.\nTable 7.1: CAN Messages\nID\nMsg\nDLC\nSender\nReceiver\nHz\n0x181\nMotor Status\n8\nMCU\nVCU\n10\n0x182\nHV Status\n8\nBMS\nVCU, MCU\n10\n0x201\nVCU Command\n8\nVCU\nMCU, BMS, TMM\n10\nTable 7.2: CAN Signals (Intel/little-endian)\nSignal\nID\nByte\nStart Bit\nLen\nScale\nOffset\nUnit\nMotorRPM\n0x181\n0-1\n0\n16\n0.125\n0\nrpm\nMotorCurrent\n0x182\n0-1\n0\n16\n0.1\n-400\nA\nBatteryVoltage\n0x182\n2-3\n16\n16\n0.1\n0\nV\nCoolantTemp\n0x182\n4\n32\n8\n1\n-40\ndeg C",
-      "section_id": "8639f824",
+      "section_id": "9a032205",
       "section_title": "7. CAN Communication & Signal Overview",
       "chapter": "SERVICE MANUAL",
       "page_number": 9,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_16",
       "text": "1. Term resistor: C42 pins 7-8 = 60 Ohm ±5%.\n2. CAN-H ~2.5V, CAN-L ~2.5V (idle).\n3. Traffic: 0x181, 0x182, 0x201 at 10 Hz.",
-      "section_id": "a247716d",
+      "section_id": "b2baacea",
       "section_title": "7.1 CAN Diagnostics",
       "chapter": "SERVICE MANUAL > 7. CAN Communication & Signal Overview",
       "page_number": 9,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 4,
-        "parent_id": "8639f824"
+        "parent_id": "9a032205"
       }
     },
     {
       "id": "chunk_17",
       "text": "Conn\nComponent\nLocation\nType\nPins\nC21\nMCU HV Input\nMCU top face\nHV orange\n2 (HV+,HV-)\nC35\nMotor Phase Output\nMCU bottom face\nHV orange\n3 (U,V,W)\nC42\nMCU LV Signal\nMCU side face\nLV grey 12-way\n12\nTable 8.2: C21 Pinout\nPin\nSignal\nWire Color\nSize\nTarget\n1\nHV+\nOrange\n50mm^2\nK2/F18\n2\nHV-\nOrange/Black\n50mm^2\nBatt Neg\nTable 8.3: C35 Pinout\nPin\nSignal\nColor\nSize\n1\nPhase U\nBrown\n35mm^2\n2\nPhase V\nBlack\n35mm^2\n3\nPhase W\nGrey\n35mm^2\nTable 8.4: C42 Pinout\nPin\nSignal\nColor\nNote\n1\nResolver SIN+\nGreen\nRotor position SIN\n2\nResolver SIN-\nGrn/Wht\n-\n3\nResolver COS+\nBlue\nRotor position COS\n4\nResolver COS-\nBlu/Wht\n-\n5\n+12V Supply\nRed\nFrom VCU 12V/2A\n6\nGND\nBlack\nChassis\n7\nCAN-H\nYellow\nCAN 2.0B high\n8\nCAN-L\nYel/Blk\nCAN 2.0B low\n9\nNTC1 (Stator 1)\nWhite\nMotor winding\n10\nNTC2 (Stator 2)\nWht/Blk\nMotor winding\n11\nCoolantTemp In\nViolet\nMCU inlet\n12\nCoolantTemp Out\nVlt/Wht\nMCU outlet",
-      "section_id": "b436b4d4",
+      "section_id": "b7b950bc",
       "section_title": "8. Connector Identification & Pinout",
       "chapter": "SERVICE MANUAL",
       "page_number": 10,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_18",
       "text": "ID\nRating\nType\nCircuit\nLocation\nF18\n250A\ngR (semiconductor)\nMCU HV Main\nBattery Pack J-Box\nF21\n50A\nMedium-blow LV\nCooling Pump\nCabin Fuse Panel Slot 21\nID\nFunction\nType\nLocation\nCoil R\nK2\nMain Positive HV\nSPST NO 450V/400A\nBattery J-Box\n~25 Ohm\nK5\nCooling Pump LV\nSPST NO 12V/30A\nCabin Panel Slot 22\n~85 Ohm",
-      "section_id": "0ba71417",
+      "section_id": "b91213c6",
       "section_title": "9. Fuse & Relay Layout",
       "chapter": "SERVICE MANUAL",
       "page_number": 11,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_19",
       "text": "10.1 P0A94 - MCU HV Input Fault\nSeverity:\nHIGH\nDescription: Open K2, damaged C21, blown F18, missing MotorRPM on 0x181. Cross-ref: S11.1, S8, S9, S7.\n10.2 P1C21 - Motor Overtemperature\nSeverity:\nMEDIUM\nStator >150C via NTC1 (C42 pin 9). Check CoolantTemp on 0x182, F21, K5, coolant level. Cross-ref: S11.2, S5.2, S9.\n10.3 P2B07 - CAN Lost (MCU->VCU)\nSeverity:\nHIGH\nCheck C42 pins 7-8. 60 Ohm term. 0x181/0x182/0x201 traffic. Cross-ref: S11.3, S7.1, S8.\n10.4 P3F10 - Cooling System Degraded\nSeverity:\nMEDIUM\nCoolantTemp >90C. F21, K5, pump, coolant level. >105C = shutdown + P1C21. Cross-ref: S11.4, S5, S9.",
-      "section_id": "8ced33e6",
+      "section_id": "993334ea",
       "section_title": "10. Diagnostic Error Code Reference",
       "chapter": "SERVICE MANUAL",
       "page_number": 12,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_20",
       "text": "11. Troubleshooting Procedures",
-      "section_id": "de7b68c6",
+      "section_id": "7bf9471b",
       "section_title": "11. Troubleshooting Procedures",
       "chapter": "SERVICE MANUAL",
       "page_number": 13,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_21",
       "text": "1. BatteryVoltage on 0x182: expected 320-390V.\n2. F18 continuity: < 0.5 Ohm. DMM.\n3. K2: listen for click. Coil ~25 Ohm.\n4. C21 pins 1-2: 320-390V. CAT III DMM.\n5. MotorRPM on 0x181: 0 when stationary.\n6. C42 pins 1-2 resolver: 20-40 Ohm.\n7. MCU fault log via 0x201 diag service.\nTable 11.1: P0A94 Measurements\nTest Point\nTool\nExpected\nIf Failed\nF18\nDMM\n< 0.5 Ohm\nReplace F18 250A\nK2 coil\nDMM\n~25 Ohm\nReplace K2\nC21 pins 1-2\nCAT III DMM\n320-390V\nCheck wiring W101\nC42 pins 7-8\nDMM\n60 Ohm\nCheck CAN term\n0x181 MotorRPM\nCAN tool\n0 rpm\nMCU/resolver",
-      "section_id": "ce3bba70",
+      "section_id": "5575ea40",
       "section_title": "11.1 P0A94 - Motor Does Not Rotate",
       "chapter": "SERVICE MANUAL > 11. Troubleshooting Procedures",
       "page_number": 13,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 4,
-        "parent_id": "de7b68c6"
+        "parent_id": "7bf9471b"
       }
     },
     {
       "id": "chunk_22",
       "text": "1. CoolantTemp on 0x182: 50-85C.\n2. Coolant level: MIN-MAX.\n3. F21: < 0.5 Ohm. K5: ~85 Ohm.\n4. Activate pump: 0x201 byte 3=0x01.\n5. Pump resistance: 0.8-1.2 Ohm.\n6. NTC at C42 pin 11: ~10kOhm @25C.",
-      "section_id": "68fba538",
+      "section_id": "93d01da2",
       "section_title": "11.2 P1C21 - Overtemperature",
       "chapter": "SERVICE MANUAL > 11. Troubleshooting Procedures",
       "page_number": 13,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 4,
-        "parent_id": "de7b68c6"
+        "parent_id": "7bf9471b"
       }
     },
     {
       "id": "chunk_23",
       "text": "1. 12V at C42 pin 5: 11.5-13.5V.\n2. C42 pins 7-8: 60 Ohm.\n3. CAN-H ~2.5V, CAN-L ~2.5V.\n4. Traffic: 0x181, 0x182, 0x201 @10Hz.\n5. Inspect C42 pins for damage.",
-      "section_id": "84ff7632",
+      "section_id": "e0abeee5",
       "section_title": "11.3 P2B07 - CAN Failure",
       "chapter": "SERVICE MANUAL > 11. Troubleshooting Procedures",
       "page_number": 13,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 4,
-        "parent_id": "de7b68c6"
+        "parent_id": "7bf9471b"
       }
     },
     {
       "id": "chunk_24",
       "text": "1. CoolantTemp on 0x182: >90C.\n2. F21 continuity.\n3. Activate K5 via 0x201.\n4. Coolant level + glycol 48-52%.\n5. Radiator fan at 85C.",
-      "section_id": "f7282c24",
+      "section_id": "5f0f73b1",
       "section_title": "11.4 P3F10 - Cooling Degraded",
       "chapter": "SERVICE MANUAL > 11. Troubleshooting Procedures",
       "page_number": 13,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 4,
-        "parent_id": "de7b68c6"
+        "parent_id": "7bf9471b"
       }
     },
     {
       "id": "chunk_25",
       "text": "Interval\nItem\nRef\n10k/12mo\nCoolant level, condition\nS5.1\n20k/24mo\nHV isolation test\nS6.1\n30k/36mo\nCoolant replacement\nS12.2\n40k/48mo\nMotor winding test\nS3.1\n50k/60mo\nCAN integrity test\nS7.1\nAnnual\nFuse/relay (F18,F21,K2,K5)\nS9\nAnnual\nConnector (C21,C35,C42)\nS12.1",
-      "section_id": "bc5cafa0",
+      "section_id": "8ba93afd",
       "section_title": "12. Preventive Maintenance",
       "chapter": "SERVICE MANUAL",
       "page_number": 14,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_26",
       "text": "- C21: check overheating. Torque 12Nm (M8).\n- C35: check corrosion. Torque 8Nm (M6).\n- C42: check bent pins. Dielectric grease.\n- Wiring: W101, W102, W201 for chafing.",
-      "section_id": "40b3a864",
+      "section_id": "b8cfd7a2",
       "section_title": "12.1 Connector Inspection",
       "chapter": "SERVICE MANUAL > 12. Preventive Maintenance",
       "page_number": 14,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 4,
-        "parent_id": "bc5cafa0"
+        "parent_id": "8ba93afd"
       }
     },
     {
       "id": "chunk_27",
       "text": "1. HV de-energized. Coolant < 40C.\n2. Drain. Fill G12 EVO 50/50.\n3. Run pump via 0x201 byte 3=0x01, 5 min.\n4. Bleed air. Verify 48-52% glycol.",
-      "section_id": "0a719e27",
+      "section_id": "7334bdad",
       "section_title": "12.2 Coolant Replacement",
       "chapter": "SERVICE MANUAL > 12. Preventive Maintenance",
       "page_number": 14,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 4,
-        "parent_id": "bc5cafa0"
+        "parent_id": "8ba93afd"
       }
     },
     {
       "id": "chunk_28",
       "text": "See HV_Power_Distribution_Schematic_v2.png (DWG: EV-DDSS-SCH-2026-002, Rev B) for wiring topology including pin\nnumbers, wire colors, wire IDs (W101-W208), ground points, and CAN routing.",
-      "section_id": "2a218a9c",
+      "section_id": "bd31db70",
       "section_title": "Appendix A: Schematic Reference",
       "chapter": "SERVICE MANUAL",
       "page_number": 15,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_29",
       "text": "Fastener\nTorque\nTool\nNotes\nC35 bolts (M6)\n8 Nm\nTorque wrench\nLoctite 243\nC21 bolts (M8)\n12 Nm\nTorque wrench\nHV critical\nMCU mount (M10)\n25 Nm\nTorque wrench\n3 stages\nBatt terminals (M8)\n18 Nm\nTorque wrench\nHV critical\nPump mount (M6)\n10 Nm\nTorque wrench\nIsolation mounts\nTemp sensor (M12)\n15 Nm\nTorque wrench\nPTFE compound",
-      "section_id": "735b03da",
+      "section_id": "d769f681",
       "section_title": "Appendix B: Torque Specifications",
       "chapter": "SERVICE MANUAL",
       "page_number": 16,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_30",
       "text": "Tool\nPurpose\nSpec\nCAT III DMM\nHV V/R/cont\n1000V CAT III\nMegohmmeter\nIsolation test\n500-1000V DC\nCANalyzer/CANnect\nCAN monitoring\n500kbps CAN 2.0B\nOscilloscope\nCAN sig analysis\n100MHz\nHV Gloves Class 00\nShock protection\n500V, test <6mo\nRefractometer\nGlycol %\nG12 EVO scale\nTorque Wrench\nFasteners\n5-50 Nm",
-      "section_id": "55b93afd",
+      "section_id": "651340d3",
       "section_title": "Appendix C: Recommended Tools",
       "chapter": "SERVICE MANUAL",
       "page_number": 17,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     },
     {
       "id": "chunk_31",
       "text": "Abbr\nFull Term\nBMS\nBattery Management System\nCAN\nController Area Network\nDDSS\nDiagnostic Decision Support System\nDMM\nDigital Multimeter\nDTC\nDiagnostic Trouble Code\nECU\nElectronic Control Unit\nFOC\nField-Oriented Control\nHV\nHigh Voltage\nIGBT\nInsulated-Gate Bipolar Transistor\nIPM\nInterior Permanent Magnet\nLV\nLow Voltage (12V)\nMCU\nMotor Controller Unit (Traction Inverter)\nNMC\nNickel Manganese Cobalt\nNTC\nNegative Temperature Coefficient\nPMSM\nPermanent Magnet Synchronous Motor\nPPE\nPersonal Protective Equipment\nTMM\nThermal Management Module\nVCU\nVehicle Control Unit",
-      "section_id": "cd90cef2",
+      "section_id": "14ae49c5",
       "section_title": "Appendix D: Abbreviations",
       "chapter": "SERVICE MANUAL",
       "page_number": 18,
       "source_file": "ServiceManual.pdf",
       "metadata": {
         "level": 2,
-        "parent_id": "b8cc2c39"
+        "parent_id": "0d0ee5a8"
       }
     }
   ],
@@ -73695,8 +73695,8 @@
   },
   "processing_info": {
     "processor_name": "PDFProcessor",
-    "processing_time_s": 0.45317792892456055,
-    "processed_at": "2026-07-09T17:14:38",
+    "processing_time_s": 0.8738257884979248,
+    "processed_at": "2026-07-09T20:53:09",
     "schema_version": "2.0"
   },
   "statistics": {
@@ -73712,5 +73712,5 @@
     "max_depth": 3
   },
   "_schema_version": "2.0",
-  "_generated_at": "2026-07-09T17:14:38.903302"
+  "_generated_at": "2026-07-09T20:53:09.153379"
 }

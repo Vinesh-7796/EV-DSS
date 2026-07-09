@@ -11,8 +11,8 @@
     "image_width": 0,
     "image_height": 0,
     "image_format": "",
-    "processed_at": "2026-07-09T17:14:25",
-    "processing_time_s": 0.08485269546508789
+    "processed_at": "2026-07-09T20:52:51",
+    "processing_time_s": 0.2110898494720459
   },
   "sections": [
     {
@@ -65728,8 +65728,8 @@
   },
   "processing_info": {
     "processor_name": "ExcelProcessor",
-    "processing_time_s": 0.08624553680419922,
-    "processed_at": "2026-07-09T17:14:25",
+    "processing_time_s": 0.2689952850341797,
+    "processed_at": "2026-07-09T20:52:51",
     "schema_version": "2.0"
   },
   "statistics": {
@@ -65744,5 +65744,5 @@
     "max_depth": 2
   },
   "_store_id": "a122b083fd1547976f9926779cf675c3ae5314a222ed295d3977f9d335d95a2f",
-  "_stored_at": "2026-07-09T17:14:25.674650"
+  "_stored_at": "2026-07-09T20:52:51.902165"
 }

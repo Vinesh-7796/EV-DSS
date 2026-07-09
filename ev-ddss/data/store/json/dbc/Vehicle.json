@@ -11,8 +11,8 @@
     "image_width": 0,
     "image_height": 0,
     "image_format": "",
-    "processed_at": "2026-07-09T19:33:14",
-    "processing_time_s": 0.0006666183471679688
+    "processed_at": "2026-07-09T20:53:32",
+    "processing_time_s": 0.0017085075378417969
   },
   "sections": [
     {
@@ -2362,8 +2362,8 @@
   },
   "processing_info": {
     "processor_name": "DBCProcessor",
-    "processing_time_s": 0.0008275508880615234,
-    "processed_at": "2026-07-09T19:33:14",
+    "processing_time_s": 0.002060413360595703,
+    "processed_at": "2026-07-09T20:53:32",
     "schema_version": "2.0"
   },
   "statistics": {
@@ -2376,5 +2376,5 @@
     "max_depth": 1
   },
   "_store_id": "9acfcc59b25fe2e1bd6b59644d6138081cb54794e6f9b886a9ad40eb0976bc9d",
-  "_stored_at": "2026-07-09T19:33:14.208185"
+  "_stored_at": "2026-07-09T20:53:32.955468"
 }

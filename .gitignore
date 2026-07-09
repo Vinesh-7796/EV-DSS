@@ -85,4 +85,13 @@ alembic/versions/*
 # Ollama installer
 OllamaSetup.exe
 
-README.md
+
+flowcharts/
+Reports/
+
+*.pdf
+*.png
+*.jpg
+*.json
+*.xlsx
+*.dbc

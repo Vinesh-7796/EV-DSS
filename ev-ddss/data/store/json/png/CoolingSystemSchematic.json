@@ -11,8 +11,8 @@
     "image_width": 2960,
     "image_height": 3907,
     "image_format": "PNG",
-    "processed_at": "2026-07-09T17:14:11",
-    "processing_time_s": 0.00628662109375
+    "processed_at": "2026-07-09T20:52:31",
+    "processing_time_s": 0.021437406539916992
   },
   "sections": [
     {
@@ -132,8 +132,8 @@
   },
   "processing_info": {
     "processor_name": "ImageProcessor",
-    "processing_time_s": 0.0065767765045166016,
-    "processed_at": "2026-07-09T17:14:11",
+    "processing_time_s": 0.021961450576782227,
+    "processed_at": "2026-07-09T20:52:31",
     "schema_version": "2.0"
   },
   "statistics": {
@@ -145,5 +145,5 @@
     "max_depth": 0
   },
   "_store_id": "a096a4b738efa248e317c5aad13c093b9182ef2a41ba5c28d427f8c745b57e9c",
-  "_stored_at": "2026-07-09T17:14:11.998177"
+  "_stored_at": "2026-07-09T20:52:31.693507"
 }
