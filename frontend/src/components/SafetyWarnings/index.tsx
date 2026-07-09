@@ -1,39 +1,38 @@
-import React from "react";
+import React from 'react';
+import { theme } from '../../styles/theme';
 
 interface Props {
   warnings: string[];
 }
 
-const style: Record<string, React.CSSProperties> = {
-  container: {
-    background: "#3d1b1b",
-    border: "1px solid #f44336",
-    borderRadius: 8,
-    padding: 12,
-    marginBottom: 12,
-  },
-  title: {
-    fontSize: 13,
-    fontWeight: 600,
-    color: "#f44336",
-    textTransform: "uppercase" as const,
-    letterSpacing: "0.5px",
-    marginBottom: 8,
-  },
-  item: {
-    fontSize: 13,
-    color: "#ffcdd2",
-    padding: "2px 0",
-  },
-};
-
 export function SafetyWarnings({ warnings }: Props) {
   if (!warnings || warnings.length === 0) return null;
   return (
-    <div style={style.container}>
-      <div style={style.title}>Safety Warnings</div>
+    <div style={{
+      background: theme.accent.redBg,
+      border: `1px solid ${theme.accent.redBorder}`,
+      borderRadius: theme.radius.lg,
+      padding: theme.spacing.md,
+      marginBottom: theme.spacing.md,
+    }}>
+      <div style={{
+        fontSize: theme.font.size.sm,
+        fontWeight: theme.font.weight.semibold,
+        color: theme.accent.red,
+        textTransform: 'uppercase',
+        letterSpacing: '0.5px',
+        marginBottom: theme.spacing.sm,
+        display: 'flex',
+        alignItems: 'center',
+        gap: 6,
+      }}>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+        Safety Warnings
+      </div>
       {warnings.map((w, i) => (
-        <div key={i} style={style.item}>
+        <div key={i} style={{ fontSize: theme.font.size.sm, color: '#fca5a5', padding: '2px 0', paddingLeft: theme.spacing.xl }}>
           &bull; {w}
         </div>
       ))}

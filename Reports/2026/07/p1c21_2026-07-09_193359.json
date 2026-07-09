@@ -1,0 +1,331 @@
+{
+  "conversation_id": "d9badb32-a1ed-42ee-9c1e-d1d6a93b205b",
+  "response": "P1C21: Motor Overtemperature (Stator > 150C)",
+  "problem_summary": "P1C21: Motor Overtemperature (Stator > 150C)",
+  "possible_causes": [
+    "Cooling pump failure",
+    "low coolant",
+    "blocked passages",
+    "CoolantTemp sensor",
+    "F21/K5 fault"
+  ],
+  "inspection_steps": [
+    "Before EV diagnostic work, check for live voltage before opening panels; ensure proper grounding before testing; verify coolant is neutralized; check battery management system status; verify charger is unplugged before repairs.",
+    "Monitor CoolantTemp on 0x182",
+    "pump function test",
+    "verify F21/K5",
+    "check coolant level",
+    "inspect NTC on C42 pin 9"
+  ],
+  "recommended_actions": [
+    "Before EV diagnostic work, check for live voltage before opening panels; ensure proper grounding before testing; verify coolant is neutralized; check battery management system status; verify charger is unplugged before repairs.",
+    "Inspect and correct Cooling pump failure.",
+    "Inspect and correct low coolant.",
+    "Inspect and correct blocked passages.",
+    "Inspect and correct CoolantTemp sensor."
+  ],
+  "related_components": [
+    "Cooling pump failure",
+    "low coolant",
+    "blocked passages",
+    "CoolantTemp sensor"
+  ],
+  "connectors": [
+    "C42"
+  ],
+  "fuses": [
+    "F21"
+  ],
+  "relays": [],
+  "can_signals": [
+    "0x182",
+    "0x201"
+  ],
+  "confidence": {
+    "overall_score": 0.9904,
+    "level": "HIGH",
+    "validation_status": "PASSED",
+    "component_scores": [
+      {
+        "name": "evidence_coverage",
+        "score": 1.0
+      },
+      {
+        "name": "citation_validity",
+        "score": 1.0
+      },
+      {
+        "name": "retrieval_score",
+        "score": 0.9359999999999999
+      },
+      {
+        "name": "entity_validation",
+        "score": 1.0
+      },
+      {
+        "name": "relationship_validation",
+        "score": 1.0
+      },
+      {
+        "name": "consistency",
+        "score": 1.0
+      },
+      {
+        "name": "hallucination_detection",
+        "score": 1.0
+      }
+    ],
+    "hallucination_detected": false
+  },
+  "safety_warnings": [],
+  "evidence": [
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "P1C21: Motor Overtemperature (Stator > 150C)",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Cooling pump failure",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "low coolant",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "blocked passages",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "CoolantTemp sensor",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "F21/K5 fault",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Before EV diagnostic work, check for live voltage before opening panels; ensure proper grounding before testing; verify coolant is neutralized; check battery management system status; verify charger is unplugged before repairs.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Inspect and correct Cooling pump failure.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Inspect and correct low coolant.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Inspect and correct blocked passages.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Inspect and correct CoolantTemp sensor.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    }
+  ],
+  "citations": [
+    {
+      "text": "EngineeringDatabase.xlsx | section Worksheet: ErrorCodes  (sql_exact, score=1.000)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    },
+    {
+      "text": "ServiceManual.pdf | p.12 | section 10. Diagnostic Error Code Reference  (sql_exact, score=0.920)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    },
+    {
+      "text": "ServiceManual.pdf | section raw_text  (sql_exact, score=0.920)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    },
+    {
+      "text": "ServiceManual.pdf | section raw_text  (sql_exact, score=0.920)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    },
+    {
+      "text": "EngineeringDatabase.xlsx | section Worksheet: DiagnosticMeasurements  (sql_exact, score=0.920)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    }
+  ],
+  "entities": [],
+  "validation": {
+    "status": "PASSED",
+    "stages": [
+      {
+        "name": "EvidenceValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.8009999999999999,
+        "error": "",
+        "result_count": 11
+      },
+      {
+        "name": "CitationValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.46799999999999997,
+        "error": "",
+        "result_count": 5
+      },
+      {
+        "name": "EntityValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.06999999999999999,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "RelationshipValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.057,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "ConsistencyChecker",
+        "status": "COMPLETED",
+        "duration_ms": 0.077,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "HallucinationDetector",
+        "status": "COMPLETED",
+        "duration_ms": 0.082,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "SafetyValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.097,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "ConfidenceEngine",
+        "status": "COMPLETED",
+        "duration_ms": 0.085,
+        "error": "",
+        "result_count": 1
+      },
+      {
+        "name": "ReportBuilder",
+        "status": "COMPLETED",
+        "duration_ms": 0.066,
+        "error": "",
+        "result_count": 1
+      }
+    ],
+    "hallucination_summary": "No hallucinations detected",
+    "safety_rules_triggered": []
+  },
+  "processing_time_ms": 1074.9,
+  "active_model": "qwen3:8b",
+  "_metadata": {
+    "id": "p1c21_2026-07-09_193359",
+    "timestamp": "2026-07-09T19:33:59.637981",
+    "query": "p1c21",
+    "problem_summary": "P1C21: Motor Overtemperature (Stator > 150C)",
+    "confidence_score": 0.9904,
+    "confidence_level": "HIGH",
+    "model": "qwen3:8b",
+    "processing_time_ms": 1074.9,
+    "md_path": "Reports\\2026\\07\\p1c21_2026-07-09_193359.md",
+    "json_path": "Reports\\2026\\07\\p1c21_2026-07-09_193359.json"
+  }
+}

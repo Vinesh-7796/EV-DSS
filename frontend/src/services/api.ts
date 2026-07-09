@@ -1,4 +1,16 @@
-import type { DiagnosticResult, ConfigData } from "../types";
+import type {
+  DiagnosticResult,
+  ConfigData,
+  KBDocument,
+  KBStatus,
+  IngestionLogEntry,
+  OllamaModel,
+  ActiveModelInfo,
+  HardwareRecommendations,
+  ReportSummary,
+  ReportDetail,
+  SystemHealth,
+} from "../types";
 
 const BASE_URL = "/api";
 
@@ -41,7 +53,7 @@ async function request<T>(
 
 export const api = {
   health: {
-    check: () => request<{ status: string }>("GET", "/health"),
+    check: () => request<SystemHealth>("GET", "/health"),
     version: () => request<{ version: string }>("GET", "/version"),
   },
 
@@ -79,5 +91,44 @@ export const api = {
 
   statistics: {
     get: () => request<{ total_diagnostics: number }>("GET", "/statistics"),
+  },
+
+  // ── Phase 1 — Knowledge Base ──────────────────────────────────────────────
+  kb: {
+    status: () => request<KBStatus>("GET", "/kb/status"),
+    log: (limit = 50) => request<IngestionLogEntry[]>("GET", `/kb/log?limit=${limit}`),
+    documents: () => request<KBDocument[]>("GET", "/kb/documents"),
+    refresh: () => request<{ queued: number; message: string }>("POST", "/kb/refresh"),
+    reindex: (filename: string) =>
+      request<{ success: boolean; message: string }>("POST", `/kb/reindex/${encodeURIComponent(filename)}`),
+    deleteDocument: (filename: string) =>
+      request<{ success: boolean; message: string }>("DELETE", `/kb/documents/${encodeURIComponent(filename)}`),
+    rawPath: () => request<{ path: string }>("GET", "/kb/raw-path"),
+    openFolder: () => request<{ success: boolean }>("POST", "/kb/open-folder"),
+  },
+
+  // ── Phase 2 — Models ──────────────────────────────────────────────────────
+  models: {
+    list: () => request<OllamaModel[]>("GET", "/models"),
+    active: () => request<ActiveModelInfo>("GET", "/models/active"),
+    activate: (model_name: string) =>
+      request<{ success: boolean; active_model: string }>("POST", "/models/activate", { model_name }),
+    hardware: () => request<HardwareRecommendations>("GET", "/models/hardware-recommendations"),
+    // pull is SSE-based; handled with fetch directly in the component
+  },
+
+  // ── Phase 3 — Reports / History ───────────────────────────────────────────
+  reports: {
+    list: (query?: string) => {
+      const params = query ? `?query=${encodeURIComponent(query)}` : "";
+      return request<ReportSummary[]>("GET", `/reports${params}`);
+    },
+    get: (id: string) => request<ReportDetail>("GET", `/reports/${id}`),
+    delete: (id: string) =>
+      request<{ success: boolean }>("DELETE", `/reports/${id}`),
+    location: (id: string) =>
+      request<{ absolute_path: string }>("GET", `/reports/${id}/location`),
+    rerun: (id: string) =>
+      request<{ success: boolean; diagnostic_result: DiagnosticResult }>("POST", `/reports/${id}/rerun`),
   },
 };

@@ -223,11 +223,11 @@ class TestExcelProcessor:
         result = processor.parse(doc)
         assert result.processed >= 1
 
-        out = Path("data/processed/excel/test.json")
+        out = Path("data/processed/xlsx/test.json")
         assert out.exists()
         with open(out) as f:
             d = json.load(f)
-            assert d["type"] == "excel"
+            assert d["type"] == "xlsx"
             assert len(d["sections"]) >= 1
             assert d["sections"][0]["title"] == "TestSheet"
         out.unlink(missing_ok=True)
@@ -335,11 +335,11 @@ class TestImageProcessor:
         result = processor.parse(doc)
         assert result.processed >= 1
 
-        out = Path("data/processed/image/test.json")
+        out = Path("data/processed/png/test.json")
         assert out.exists()
         with open(out) as f:
             d = json.load(f)
-            assert d["type"] == "image"
+            assert d["type"] == "png"
             assert d["metadata"]["image_width"] == 2
             assert d["metadata"]["image_height"] == 2
             assert d["metadata"]["image_format"] == "PNG"

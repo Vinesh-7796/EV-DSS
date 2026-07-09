@@ -21,7 +21,10 @@ class JSONKnowledgeStore(KnowledgeStore):
     """
 
     def __init__(self, base_dir: Optional[Path] = None) -> None:
-        self._base_dir = Path(base_dir or Path("data") / "store" / "json")
+        if base_dir:
+            self._base_dir = Path(base_dir)
+        else:
+            self._base_dir = Path(__file__).resolve().parent.parent.parent / "data" / "store" / "json"
         self._base_dir.mkdir(parents=True, exist_ok=True)
         self._manifest_path = self._base_dir / "manifest.json"
         self._manifest: Dict[str, Any] = {}

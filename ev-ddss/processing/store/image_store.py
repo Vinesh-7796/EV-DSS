@@ -24,7 +24,10 @@ class ImageStore(KnowledgeStore):
     """
 
     def __init__(self, base_dir: Optional[Path] = None) -> None:
-        self._base_dir = Path(base_dir or Path("data") / "store" / "images")
+        if base_dir:
+            self._base_dir = Path(base_dir)
+        else:
+            self._base_dir = Path(__file__).resolve().parent.parent.parent / "data" / "store" / "images"
         self._base_dir.mkdir(parents=True, exist_ok=True)
         self._manifest_path = self._base_dir / "manifest.json"
         self._manifest: Dict[str, Any] = {}

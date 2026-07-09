@@ -243,6 +243,12 @@ def _validate_duplicate_detection(doc: Document) -> List[str]:
             content = _node_content(node)
             ntype = _node_type(node)
             nid = _node_id(node)
+            
+            # Skip row and cell nodes which naturally contain duplicate values/headers
+            if ntype in ("spreadsheet_row", "spreadsheet_cell", "table_row", "table_cell", "row", "cell"):
+                walk(_node_children(node), depth + 1)
+                continue
+                
             text_content = str(content)[:200] if content else ""
             if text_content and len(text_content) > 20:
                 key = f"{ntype}::depth{depth}"

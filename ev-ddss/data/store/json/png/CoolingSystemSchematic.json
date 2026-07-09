@@ -11,8 +11,8 @@
     "image_width": 2960,
     "image_height": 3907,
     "image_format": "PNG",
-    "processed_at": "2026-07-06T20:08:23",
-    "processing_time_s": 0.02020120620727539
+    "processed_at": "2026-07-09T17:14:11",
+    "processing_time_s": 0.00628662109375
   },
   "sections": [
     {
@@ -51,7 +51,7 @@
   "images": [
     {
       "id": "img_1",
-      "path": "D:\\Github\\EV diagnostics AI_POC\\ev-ddss\\data\\raw\\CoolingSystemSchematic.png",
+      "path": "D:\\Github\\EV-DSS\\ev-ddss\\data\\raw\\CoolingSystemSchematic.png",
       "caption": "",
       "page_number": 0,
       "width": 2960,
@@ -88,7 +88,7 @@
         "type": "image",
         "location": {
           "image_region": "full",
-          "path": "D:\\Github\\EV diagnostics AI_POC\\ev-ddss\\data\\raw\\CoolingSystemSchematic.png"
+          "path": "D:\\Github\\EV-DSS\\ev-ddss\\data\\raw\\CoolingSystemSchematic.png"
         }
       },
       "parent_id": null,
@@ -112,7 +112,7 @@
           "type": "image",
           "location": {
             "image_region": "full",
-            "path": "D:\\Github\\EV diagnostics AI_POC\\ev-ddss\\data\\raw\\CoolingSystemSchematic.png"
+            "path": "D:\\Github\\EV-DSS\\ev-ddss\\data\\raw\\CoolingSystemSchematic.png"
           }
         },
         "parent_id": null,
@@ -132,8 +132,8 @@
   },
   "processing_info": {
     "processor_name": "ImageProcessor",
-    "processing_time_s": 0.020662784576416016,
-    "processed_at": "2026-07-06T20:08:23",
+    "processing_time_s": 0.0065767765045166016,
+    "processed_at": "2026-07-09T17:14:11",
     "schema_version": "2.0"
   },
   "statistics": {
@@ -145,5 +145,5 @@
     "max_depth": 0
   },
   "_store_id": "a096a4b738efa248e317c5aad13c093b9182ef2a41ba5c28d427f8c745b57e9c",
-  "_stored_at": "2026-07-06T20:08:23.342504"
+  "_stored_at": "2026-07-09T17:14:11.998177"
 }

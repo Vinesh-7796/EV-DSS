@@ -1,71 +1,49 @@
-import React from "react";
+import React from 'react';
+import { Card } from '../ui/Card';
+import { theme } from '../../styles/theme';
 
 interface Props {
   status: string;
   stages?: { name: string; status: string; duration_ms?: number }[];
 }
 
-function statusStyle(s: string): React.CSSProperties {
-  return {
-    fontSize: 12,
-    fontWeight: 600,
-    color: s === "PASSED" ? "#4caf50" : s.includes("WARNING") ? "#ff9800" : s.includes("FAIL") || s.includes("ERROR") ? "#f44336" : "#58a6ff",
-    marginBottom: 8,
-  };
-}
-
-function stageStatusStyle(s: string): React.CSSProperties {
-  return {
-    color: s === "COMPLETED" ? "#4caf50" : s === "FAILED" ? "#f44336" : "#ff9800",
-    fontWeight: 500,
-  };
-}
+const stageColors: Record<string, string> = {
+  COMPLETED: theme.accent.green,
+  PASSED: theme.accent.green,
+  FAILED: theme.accent.red,
+  WARNING: theme.accent.orange,
+  RUNNING: theme.accent.blue,
+  PENDING: theme.text.dim,
+};
 
 export function ProcessingStatus({ status, stages }: Props) {
   return (
-    <div
-      style={{
-        background: "#1e2430",
-        borderRadius: 8,
-        padding: 12,
-        marginBottom: 12,
-      }}
-    >
-      <div
-        style={{
-          fontSize: 13,
-          fontWeight: 600,
-          color: "#8b949e",
-          textTransform: "uppercase",
-          letterSpacing: "0.5px",
-          marginBottom: 8,
-        }}
-      >
+    <Card>
+      <div style={{ fontSize: theme.font.size.sm, fontWeight: theme.font.weight.semibold, color: theme.text.muted, textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: theme.spacing.sm }}>
         Processing Status
       </div>
-      <div style={statusStyle(status)}>{status}</div>
+      <div style={{ fontSize: theme.font.size.base, fontWeight: theme.font.weight.semibold, color: stageColors[status] || theme.accent.blue, marginBottom: theme.spacing.md }}>
+        {status}
+      </div>
       {stages?.map((s, i) => (
-        <div
-          key={i}
-          style={{
-            fontSize: 12,
-            display: "flex",
-            justifyContent: "space-between",
-            padding: "3px 0",
-            borderBottom: "1px solid #161b22",
-          }}
-        >
-          <span style={{ color: "#c9d1d9" }}>{s.name}</span>
-          <span>
-            <span style={stageStatusStyle(s.status)}>{s.status}</span>
+        <div key={i} style={{
+          display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+          padding: '5px 0', borderBottom: `1px solid ${theme.border.subtle}`,
+          fontSize: theme.font.size.sm,
+        }}>
+          <span style={{ color: theme.text.secondary }}>{s.name}</span>
+          <span style={{ display: 'flex', alignItems: 'center', gap: theme.spacing.sm }}>
+            <span style={{ color: stageColors[s.status] || theme.text.muted, fontWeight: theme.font.weight.medium }}>
+              {s.status}
+            </span>
             {s.duration_ms !== undefined && (
-              <span style={{ color: "#484f58", marginLeft: 6 }}>
-                {s.duration_ms.toFixed(0)}ms
+              <span style={{ color: theme.text.dim, fontSize: theme.font.size.xs }}>
+                {(s.duration_ms).toFixed(0)}ms
               </span>
             )}
           </span>
         </div>
       ))}
-    </div>
+    </Card>
   );
 }

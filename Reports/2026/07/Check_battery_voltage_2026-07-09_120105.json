@@ -1,0 +1,284 @@
+{
+  "conversation_id": "b38fff0d-c698-4dff-ab3d-b0951feec3ff",
+  "problem_summary": "P0A00: BatteryVoltage Out of Range (CAN 0x182)",
+  "possible_causes": [
+    "BMS communication fault",
+    "CAN signal corruption",
+    "cell imbalance",
+    "sensor drift"
+  ],
+  "inspection_steps": [
+    "Before EV diagnostic work, check for live voltage before opening panels; ensure proper grounding before testing; verify coolant is neutralized; check battery management system status; verify charger is unplugged before repairs.",
+    "Read BatteryVoltage on 0x182",
+    "compare with C21 measurement",
+    "check CAN bus"
+  ],
+  "recommended_actions": [
+    "Before EV diagnostic work, check for live voltage before opening panels; ensure proper grounding before testing; verify coolant is neutralized; check battery management system status; verify charger is unplugged before repairs.",
+    "Inspect and correct BMS communication fault.",
+    "Inspect and correct CAN signal corruption.",
+    "Inspect and correct cell imbalance.",
+    "Inspect and correct sensor drift."
+  ],
+  "related_components": [
+    "BMS communication fault",
+    "CAN signal corruption",
+    "cell imbalance",
+    "sensor drift"
+  ],
+  "connectors": [
+    "C21",
+    "C42"
+  ],
+  "fuses": [
+    "F18"
+  ],
+  "relays": [],
+  "can_signals": [
+    "0x182"
+  ],
+  "confidence": {
+    "overall_score": 0.9952,
+    "level": "HIGH",
+    "validation_status": "PASSED",
+    "component_scores": [
+      {
+        "name": "evidence_coverage",
+        "score": 1.0
+      },
+      {
+        "name": "citation_validity",
+        "score": 1.0
+      },
+      {
+        "name": "retrieval_score",
+        "score": 0.968
+      },
+      {
+        "name": "entity_validation",
+        "score": 1.0
+      },
+      {
+        "name": "relationship_validation",
+        "score": 1.0
+      },
+      {
+        "name": "consistency",
+        "score": 1.0
+      },
+      {
+        "name": "hallucination_detection",
+        "score": 1.0
+      }
+    ],
+    "hallucination_detected": false
+  },
+  "safety_warnings": [],
+  "evidence": [
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:5",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "P0A00: BatteryVoltage Out of Range (CAN 0x182)",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:5",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "BMS communication fault",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:5",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "CAN signal corruption",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:5",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "cell imbalance",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:5",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "sensor drift",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:5",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Before EV diagnostic work, check for live voltage before opening panels; ensure proper grounding before testing; verify coolant is neutralized; check battery management system status; verify charger is unplugged before repairs.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:5",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Inspect and correct BMS communication fault.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:5",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Inspect and correct CAN signal corruption.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:5",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Inspect and correct cell imbalance.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:5",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Inspect and correct sensor drift.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    }
+  ],
+  "citations": [
+    {
+      "text": "EngineeringDatabase.xlsx | section Worksheet: ErrorCodes  (sql_exact, score=1.000)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    }
+  ],
+  "entities": [],
+  "validation": {
+    "status": "PASSED",
+    "stages": [
+      {
+        "name": "EvidenceValidator",
+        "status": "COMPLETED",
+        "duration_ms": 1.397,
+        "error": "",
+        "result_count": 10
+      },
+      {
+        "name": "CitationValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.438,
+        "error": "",
+        "result_count": 1
+      },
+      {
+        "name": "EntityValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.08600000000000001,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "RelationshipValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.062,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "ConsistencyChecker",
+        "status": "COMPLETED",
+        "duration_ms": 0.081,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "HallucinationDetector",
+        "status": "COMPLETED",
+        "duration_ms": 0.157,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "SafetyValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.16899999999999998,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "ConfidenceEngine",
+        "status": "COMPLETED",
+        "duration_ms": 0.094,
+        "error": "",
+        "result_count": 1
+      },
+      {
+        "name": "ReportBuilder",
+        "status": "COMPLETED",
+        "duration_ms": 0.074,
+        "error": "",
+        "result_count": 1
+      }
+    ],
+    "hallucination_summary": "No hallucinations detected",
+    "safety_rules_triggered": []
+  },
+  "processing_time_ms": 77.2,
+  "active_model": "qwen3:8b",
+  "_metadata": {
+    "id": "Check_battery_voltage_2026-07-09_120105",
+    "timestamp": "2026-07-09T12:01:05.785693",
+    "query": "Check battery voltage",
+    "problem_summary": "P0A00: BatteryVoltage Out of Range (CAN 0x182)",
+    "confidence_score": 0.9952,
+    "confidence_level": "HIGH",
+    "model": "qwen3:8b",
+    "processing_time_ms": 77.2,
+    "md_path": "Reports\\2026\\07\\Check_battery_voltage_2026-07-09_120105.md",
+    "json_path": "Reports\\2026\\07\\Check_battery_voltage_2026-07-09_120105.json"
+  }
+}

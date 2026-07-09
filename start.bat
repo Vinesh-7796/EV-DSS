@@ -56,7 +56,7 @@ pushd "%ROOT%\backend"
 set REASONING_TIMEOUT=300
 start /B "" "%PYTHON%" -m uvicorn app:create_app --host 0.0.0.0 --port %APP_PORT% --factory --log-level warning >nul 2>&1
 popd
-timeout /t 4 /nobreak >nul
+timeout /t 8 /nobreak >nul
 
 rem ---- Start Frontend ----
 echo [3/3] Starting Frontend on port 5173...
@@ -71,7 +71,7 @@ echo ============================================
 echo   Service Status
 echo ============================================
 
-"%PYTHON%" -c "import urllib.request, json; r=urllib.request.urlopen('http://localhost:'+__import__('os').environ['APP_PORT']+'/health', timeout=3); d=json.loads(r.read()); print('  Backend:  OK' if d.get('status')=='healthy' else '  Backend:  FAIL')" 2>nul
+"%PYTHON%" -c "import urllib.request, json; r=urllib.request.urlopen('http://localhost:'+__import__('os').environ['APP_PORT']+'/health', timeout=8); d=json.loads(r.read()); print('  Backend:  OK' if d.get('status')=='healthy' else '  Backend:  FAIL')" 2>nul
 if errorlevel 1 echo   Backend:  FAIL
 
 "%PYTHON%" -c "import urllib.request; r=urllib.request.urlopen('http://localhost:5173', timeout=3); print('  Frontend: OK' if r.status==200 else '  Frontend: FAIL')" 2>nul

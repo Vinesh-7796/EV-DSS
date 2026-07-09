@@ -1,8 +1,8 @@
 {
-  "source": "EngineeringDatabase.xlsx",
+  "source": "EngineeringDatabase_v2.xlsx",
   "type": "xlsx",
   "metadata": {
-    "filename": "EngineeringDatabase.xlsx",
+    "filename": "EngineeringDatabase_v2.xlsx",
     "file_size": 18153,
     "checksum": "a122b083fd1547976f9926779cf675c3ae5314a222ed295d3977f9d335d95a2f",
     "page_count": 0,
@@ -11,8 +11,8 @@
     "image_width": 0,
     "image_height": 0,
     "image_format": "",
-    "processed_at": "2026-07-06T20:08:23",
-    "processing_time_s": 0.1393272876739502
+    "processed_at": "2026-07-09T16:58:52",
+    "processing_time_s": 0.16739964485168457
   },
   "sections": [
     {
@@ -1158,7 +1158,7 @@
       "section_title": "ErrorCodes",
       "chapter": "",
       "page_number": 0,
-      "source_file": "EngineeringDatabase.xlsx",
+      "source_file": "EngineeringDatabase_v2.xlsx",
       "metadata": {}
     },
     {
@@ -1168,7 +1168,7 @@
       "section_title": "Connectors",
       "chapter": "",
       "page_number": 0,
-      "source_file": "EngineeringDatabase.xlsx",
+      "source_file": "EngineeringDatabase_v2.xlsx",
       "metadata": {}
     },
     {
@@ -1178,7 +1178,7 @@
       "section_title": "Fuses",
       "chapter": "",
       "page_number": 0,
-      "source_file": "EngineeringDatabase.xlsx",
+      "source_file": "EngineeringDatabase_v2.xlsx",
       "metadata": {}
     },
     {
@@ -1188,7 +1188,7 @@
       "section_title": "Relays",
       "chapter": "",
       "page_number": 0,
-      "source_file": "EngineeringDatabase.xlsx",
+      "source_file": "EngineeringDatabase_v2.xlsx",
       "metadata": {}
     },
     {
@@ -1198,7 +1198,7 @@
       "section_title": "CAN Messages",
       "chapter": "",
       "page_number": 0,
-      "source_file": "EngineeringDatabase.xlsx",
+      "source_file": "EngineeringDatabase_v2.xlsx",
       "metadata": {}
     },
     {
@@ -1208,7 +1208,7 @@
       "section_title": "CAN Signals",
       "chapter": "",
       "page_number": 0,
-      "source_file": "EngineeringDatabase.xlsx",
+      "source_file": "EngineeringDatabase_v2.xlsx",
       "metadata": {}
     },
     {
@@ -1218,7 +1218,7 @@
       "section_title": "ConnectorPinout",
       "chapter": "",
       "page_number": 0,
-      "source_file": "EngineeringDatabase.xlsx",
+      "source_file": "EngineeringDatabase_v2.xlsx",
       "metadata": {}
     },
     {
@@ -1228,7 +1228,7 @@
       "section_title": "TorqueSpecifications",
       "chapter": "",
       "page_number": 0,
-      "source_file": "EngineeringDatabase.xlsx",
+      "source_file": "EngineeringDatabase_v2.xlsx",
       "metadata": {}
     },
     {
@@ -1238,7 +1238,7 @@
       "section_title": "DiagnosticMeasurements",
       "chapter": "",
       "page_number": 0,
-      "source_file": "EngineeringDatabase.xlsx",
+      "source_file": "EngineeringDatabase_v2.xlsx",
       "metadata": {}
     },
     {
@@ -1248,7 +1248,7 @@
       "section_title": "MaintenanceSchedule",
       "chapter": "",
       "page_number": 0,
-      "source_file": "EngineeringDatabase.xlsx",
+      "source_file": "EngineeringDatabase_v2.xlsx",
       "metadata": {}
     },
     {
@@ -1258,7 +1258,7 @@
       "section_title": "SensorSpecifications",
       "chapter": "",
       "page_number": 0,
-      "source_file": "EngineeringDatabase.xlsx",
+      "source_file": "EngineeringDatabase_v2.xlsx",
       "metadata": {}
     },
     {
@@ -1268,7 +1268,7 @@
       "section_title": "ECUList",
       "chapter": "",
       "page_number": 0,
-      "source_file": "EngineeringDatabase.xlsx",
+      "source_file": "EngineeringDatabase_v2.xlsx",
       "metadata": {}
     }
   ],
@@ -65728,8 +65728,8 @@
   },
   "processing_info": {
     "processor_name": "ExcelProcessor",
-    "processing_time_s": 0.1427621841430664,
-    "processed_at": "2026-07-06T20:08:23",
+    "processing_time_s": 0.16907787322998047,
+    "processed_at": "2026-07-09T16:58:52",
     "schema_version": "2.0"
   },
   "statistics": {
@@ -65744,5 +65744,5 @@
     "max_depth": 2
   },
   "_store_id": "a122b083fd1547976f9926779cf675c3ae5314a222ed295d3977f9d335d95a2f",
-  "_stored_at": "2026-07-06T20:08:23.769142"
+  "_stored_at": "2026-07-09T16:58:52.201696"
 }

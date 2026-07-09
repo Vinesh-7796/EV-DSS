@@ -5,7 +5,7 @@ import { ChatWindow } from "../components/ChatWindow";
 describe("ChatWindow", () => {
   it("shows empty state when no messages", () => {
     render(<ChatWindow messages={[]} />);
-    expect(screen.getByText("Ask an engineering question to begin diagnosis")).toBeInTheDocument();
+    expect(screen.getByText("Start a diagnostic session")).toBeInTheDocument();
   });
 
   it("renders messages", () => {

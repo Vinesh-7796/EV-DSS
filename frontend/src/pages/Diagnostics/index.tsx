@@ -1,52 +1,38 @@
-import React, { useState, useCallback } from "react";
-import { InputBox } from "../../components/InputBox";
-import { ConfidenceCard } from "../../components/ConfidenceCard";
-import { SafetyWarnings } from "../../components/SafetyWarnings";
-import { CitationPanel } from "../../components/CitationPanel";
-import { EvidenceViewer } from "../../components/EvidenceViewer";
-import { ProcessingStatus } from "../../components/ProcessingStatus";
-import { api } from "../../services/api";
-import type { DiagnosticResult } from "../../types";
+import React, { useState, useCallback } from 'react';
+import { InputBox } from '../../components/InputBox';
+import { Card } from '../../components/ui/Card';
+import { Badge } from '../../components/ui/Badge';
+import { theme } from '../../styles/theme';
+import { api } from '../../services/api';
+import type { DiagnosticResult } from '../../types';
+import { SafetyWarnings } from '../../components/SafetyWarnings';
+import { EvidenceViewer } from '../../components/EvidenceViewer';
+import { CitationPanel } from '../../components/CitationPanel';
+import { ConfidencePanel } from '../../components/ConfidencePanel';
+import { ProcessingStatus } from '../../components/ProcessingStatus';
 
-const style: Record<string, React.CSSProperties> = {
-  page: {
-    display: "flex",
-    flexDirection: "column",
-    height: "100%",
-  },
-  content: {
-    flex: 1,
-    overflowY: "auto",
-    padding: 16,
-  },
-  header: {
-    fontSize: 16,
-    fontWeight: 600,
-    color: "#e6e6e6",
-    marginBottom: 16,
-  },
-  card: {
-    background: "#1e2430",
-    borderRadius: 8,
-    padding: 16,
-    marginBottom: 12,
-  },
-  cardTitle: {
-    fontSize: 13,
-    fontWeight: 600,
-    color: "#8b949e",
-    textTransform: "uppercase" as const,
-    letterSpacing: "0.5px",
-    marginBottom: 8,
-  },
-  listItem: {
-    fontSize: 13,
-    color: "#c9d1d9",
-    padding: "4px 0",
-    paddingLeft: 16,
-    borderBottom: "1px solid #161b22",
-  },
-};
+function SectionBlock({ title, items }: { title: string; items: string[] }) {
+  if (!items || items.length === 0) return null;
+  return (
+    <Card style={{ marginBottom: theme.spacing.md }}>
+      <div style={{ fontSize: theme.font.size.sm, fontWeight: theme.font.weight.semibold, color: theme.text.muted, textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: theme.spacing.sm }}>
+        {title}
+      </div>
+      {items.map((item, i) => (
+        <div key={i} style={{
+          fontSize: theme.font.size.base,
+          color: theme.text.secondary,
+          padding: '4px 0',
+          paddingLeft: theme.spacing.lg,
+          borderBottom: `1px solid ${theme.border.subtle}`,
+          lineHeight: 1.5,
+        }}>
+          &bull; {item}
+        </div>
+      ))}
+    </Card>
+  );
+}
 
 export function DiagnosticsPage() {
   const [result, setResult] = useState<DiagnosticResult | null>(null);
@@ -60,7 +46,7 @@ export function DiagnosticsPage() {
       const r = await api.diagnose.run(query);
       setResult(r);
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Request failed";
+      const msg = err instanceof Error ? err.message : 'Request failed';
       setError(msg);
     } finally {
       setLoading(false);
@@ -68,69 +54,60 @@ export function DiagnosticsPage() {
   }, []);
 
   return (
-    <div style={style.page}>
-      <div style={style.content}>
-        <div style={style.header}>Diagnostic Report</div>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+      <div style={{ flex: 1, overflowY: 'auto', padding: theme.spacing['2xl'] }}>
+        <div style={{ fontSize: theme.font.size['3xl'], fontWeight: theme.font.weight.bold, color: theme.text.primary, marginBottom: theme.spacing.xl }}>
+          Diagnostics
+        </div>
+
         {error && (
-          <div style={{ ...style.card, border: "1px solid #f44336", color: "#f44336" }}>
-            {error}
-          </div>
+          <Card style={{ borderColor: theme.accent.red, marginBottom: theme.spacing.md }}>
+            <div style={{ color: theme.accent.red, fontSize: theme.font.size.base }}>{error}</div>
+          </Card>
         )}
+
         {result && (
           <>
-            <div style={style.card}>
-              <div style={style.cardTitle}>Problem Summary</div>
-              <div style={{ fontSize: 14, color: "#e6e6e6" }}>
+            <Card style={{ marginBottom: theme.spacing.md }}>
+              <div style={{ fontSize: theme.font.size.sm, fontWeight: theme.font.weight.semibold, color: theme.text.muted, textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: theme.spacing.sm }}>
+                Fault Summary
+              </div>
+              <div style={{ fontSize: theme.font.size.md, color: theme.text.primary, lineHeight: 1.6 }}>
                 {result.problem_summary}
               </div>
-            </div>
-            <div style={style.card}>
-              <div style={style.cardTitle}>Possible Causes</div>
-              {result.possible_causes.map((c, i) => (
-                <div key={i} style={style.listItem}>
-                  {i + 1}. {c}
-                </div>
-              ))}
-            </div>
-            <div style={style.card}>
-              <div style={style.cardTitle}>Inspection Steps</div>
-              {result.inspection_steps.map((s, i) => (
-                <div key={i} style={style.listItem}>
-                  {i + 1}. {s}
-                </div>
-              ))}
-            </div>
-            <div style={style.card}>
-              <div style={style.cardTitle}>Recommended Actions</div>
-              {result.recommended_actions.map((a, i) => (
-                <div key={i} style={style.listItem}>
-                  {i + 1}. {a}
-                </div>
-              ))}
-            </div>
-            <ConfidenceCard confidence={result.confidence} />
+              <div style={{ display: 'flex', gap: theme.spacing.sm, marginTop: theme.spacing.sm }}>
+                {result.active_model && <Badge variant="blue">{result.active_model}</Badge>}
+                {result.processing_time_ms > 0 && (
+                  <Badge variant="cyan">{(result.processing_time_ms / 1000).toFixed(1)}s</Badge>
+                )}
+              </div>
+            </Card>
+            <SectionBlock title="Possible Causes" items={result.possible_causes} />
+            <SectionBlock title="Inspection Steps" items={result.inspection_steps} />
+            <SectionBlock title="Recommended Actions" items={result.recommended_actions} />
             <SafetyWarnings warnings={result.safety_warnings} />
-            <EvidenceViewer evidence={result.evidence} />
-            <CitationPanel citations={result.citations} />
+            <ConfidencePanel confidence={result.confidence} evidence={result.evidence} citations={result.citations} />
             {result.validation && (
-              <ProcessingStatus
-                status={result.validation.status}
-                stages={result.validation.stages}
-              />
+              <ProcessingStatus status={result.validation.status} stages={result.validation.stages} />
             )}
           </>
         )}
+
         {!result && !loading && (
-          <div style={{ color: "#484f58", textAlign: "center", paddingTop: 40 }}>
-            Enter a query to run a full diagnostic analysis
+          <div style={{ textAlign: 'center', paddingTop: 60, color: theme.text.muted }}>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke={theme.text.dim} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: theme.spacing.lg }}>
+              <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+            </svg>
+            <div style={{ fontSize: theme.font.size.md, fontWeight: theme.font.weight.medium, color: theme.text.secondary, marginBottom: theme.spacing.sm }}>
+              Run a diagnostic analysis
+            </div>
+            <div style={{ fontSize: theme.font.size.sm, color: theme.text.muted }}>
+              Describe the vehicle issue to get a structured diagnostic report with confidence scoring and evidence.
+            </div>
           </div>
         )}
       </div>
-      <InputBox
-        onSend={handleSend}
-        disabled={loading}
-        placeholder="Describe the vehicle issue..."
-      />
+      <InputBox onSend={handleSend} disabled={loading} placeholder="Describe the vehicle issue..." />
     </div>
   );
 }

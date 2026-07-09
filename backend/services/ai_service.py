@@ -93,7 +93,7 @@ class AIService:
                     "result_count": s.result_count,
                 })
 
-        return {
+        result = {
             "conversation_id": cid,
             "response": response.problem_summary,
             "problem_summary": response.problem_summary,
@@ -123,7 +123,24 @@ class AIService:
                 "safety_rules_triggered": report.safety_rules_triggered if report else [],
             },
             "processing_time_ms": round(elapsed, 1),
+            "active_model": settings.reasoning.model,
         }
+
+        # Record response time for health monitoring
+        try:
+            from routes.health import record_response_time
+            record_response_time(elapsed)
+        except Exception:
+            pass
+
+        # Auto-save diagnostic report (non-blocking)
+        try:
+            from services.report_service import get_report_service
+            get_report_service().save_report(message, result)
+        except Exception:
+            pass
+
+        return result
 
     async def run_diagnosis(
         self,
@@ -164,7 +181,7 @@ class AIService:
                     "result_count": s.result_count,
                 })
 
-        return {
+        result = {
             "conversation_id": cid,
             "problem_summary": response.problem_summary,
             "possible_causes": response.possible_causes,
@@ -193,7 +210,24 @@ class AIService:
                 "safety_rules_triggered": report.safety_rules_triggered if report else [],
             },
             "processing_time_ms": round(elapsed, 1),
+            "active_model": settings.reasoning.model,
         }
+
+        # Record response time for health monitoring
+        try:
+            from routes.health import record_response_time
+            record_response_time(elapsed)
+        except Exception:
+            pass
+
+        # Auto-save diagnostic report (non-blocking)
+        try:
+            from services.report_service import get_report_service
+            get_report_service().save_report(query, result)
+        except Exception:
+            pass
+
+        return result
 
     async def _retrieve(self, query: str) -> StructuredContextPackage:
         loop = asyncio.get_running_loop()

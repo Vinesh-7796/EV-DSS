@@ -4,15 +4,15 @@
   "metadata": {
     "filename": "EngineeringDatabase_v2.xlsx",
     "file_size": 18153,
-    "checksum": "a122b083fd1547976f9926779cf675c3ae5314a222ed295d3977f9d335d95a2f",
+    "checksum": "",
     "page_count": 0,
     "sheet_count": 12,
     "message_count": 0,
     "image_width": 0,
     "image_height": 0,
     "image_format": "",
-    "processed_at": "2026-07-06T20:08:23",
-    "processing_time_s": 0.02276444435119629
+    "processed_at": "2026-07-09T12:06:53",
+    "processing_time_s": 0.01301884651184082
   },
   "sections": [
     {
@@ -61283,8 +61283,8 @@
   },
   "processing_info": {
     "processor_name": "ExcelProcessor",
-    "processing_time_s": 0.025337934494018555,
-    "processed_at": "2026-07-06T20:08:23",
+    "processing_time_s": 0.01442098617553711,
+    "processed_at": "2026-07-09T12:06:53",
     "schema_version": "2.0"
   },
   "statistics": {
@@ -61299,5 +61299,5 @@
     "max_depth": 2
   },
   "_schema_version": "2.0",
-  "_generated_at": "2026-07-06T20:08:23.940137"
+  "_generated_at": "2026-07-09T12:06:53.348164"
 }

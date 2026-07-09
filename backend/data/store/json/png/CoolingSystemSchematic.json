@@ -1,0 +1,149 @@
+{
+  "source": "CoolingSystemSchematic.png",
+  "type": "png",
+  "metadata": {
+    "filename": "CoolingSystemSchematic.png",
+    "file_size": 360740,
+    "checksum": "a096a4b738efa248e317c5aad13c093b9182ef2a41ba5c28d427f8c745b57e9c",
+    "page_count": 0,
+    "sheet_count": 0,
+    "message_count": 0,
+    "image_width": 2960,
+    "image_height": 3907,
+    "image_format": "PNG",
+    "processed_at": "2026-07-09T16:55:04",
+    "processing_time_s": 0.0009515285491943359
+  },
+  "sections": [
+    {
+      "id": "img_metadata",
+      "title": "Image Metadata",
+      "level": 1,
+      "page_number": 0,
+      "parent_id": null,
+      "elements": [
+        {
+          "type": "paragraph",
+          "content": "Format: PNG",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "Dimensions: 2960 x 3907 px",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        },
+        {
+          "type": "paragraph",
+          "content": "Mode: RGBA",
+          "level": 0,
+          "page_number": 0,
+          "metadata": {}
+        }
+      ],
+      "subsections": []
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "id": "img_1",
+      "path": "D:\\Github\\EV-DSS\\ev-ddss\\data\\raw\\CoolingSystemSchematic.png",
+      "caption": "",
+      "page_number": 0,
+      "width": 2960,
+      "height": 3907,
+      "format": "PNG",
+      "bbox": null
+    }
+  ],
+  "chunks": [
+    {
+      "id": "chunk_img_meta",
+      "text": "Image: CoolingSystemSchematic.png (2960x3907, PNG)",
+      "section_id": "img_metadata",
+      "section_title": "Image Metadata",
+      "chapter": "",
+      "page_number": 0,
+      "source_file": "CoolingSystemSchematic.png",
+      "metadata": {}
+    }
+  ],
+  "raw_text": "",
+  "content_nodes": [
+    {
+      "id": "DOC001.IMG001",
+      "type": "image",
+      "content": {
+        "filename": "CoolingSystemSchematic.png",
+        "width": 2960,
+        "height": 3907,
+        "format": "PNG",
+        "mode": "RGBA"
+      },
+      "reference": {
+        "type": "image",
+        "location": {
+          "image_region": "full",
+          "path": "D:\\Github\\EV-DSS\\ev-ddss\\data\\raw\\CoolingSystemSchematic.png"
+        }
+      },
+      "parent_id": null,
+      "children": [],
+      "metadata": {}
+    }
+  ],
+  "relationship_graph": {
+    "nodes": {
+      "DOC001.IMG001": {
+        "id": "DOC001.IMG001",
+        "type": "image",
+        "content": {
+          "filename": "CoolingSystemSchematic.png",
+          "width": 2960,
+          "height": 3907,
+          "format": "PNG",
+          "mode": "RGBA"
+        },
+        "reference": {
+          "type": "image",
+          "location": {
+            "image_region": "full",
+            "path": "D:\\Github\\EV-DSS\\ev-ddss\\data\\raw\\CoolingSystemSchematic.png"
+          }
+        },
+        "parent_id": null,
+        "children": [],
+        "metadata": {}
+      }
+    },
+    "edges": [
+      {
+        "source": "DOC001.IMG001",
+        "target": "DOC001",
+        "relationship_type": "child_of",
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ]
+  },
+  "processing_info": {
+    "processor_name": "ImageProcessor",
+    "processing_time_s": 0.0011301040649414062,
+    "processed_at": "2026-07-09T16:55:04",
+    "schema_version": "2.0"
+  },
+  "statistics": {
+    "total_content_nodes": 1,
+    "total_relationships": 1,
+    "node_type_counts": {
+      "image": 1
+    },
+    "max_depth": 0
+  },
+  "_store_id": "a096a4b738efa248e317c5aad13c093b9182ef2a41ba5c28d427f8c745b57e9c",
+  "_stored_at": "2026-07-09T16:55:04.178787"
+}

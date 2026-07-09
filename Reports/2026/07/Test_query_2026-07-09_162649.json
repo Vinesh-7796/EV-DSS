@@ -1,0 +1,216 @@
+{
+  "conversation_id": "4407f87f-e4cc-4333-a170-56b120ee3bdc",
+  "problem_summary": "Retrieved engineering evidence for: Test query",
+  "possible_causes": [
+    "Worksheet: ErrorCodes row 2: Code: P1C21; Description: Motor Overtemperature (Stator > 150C); Severity: MEDIUM; Possible Cause: Cooling pump failure; low coolant; blocked passages; CoolantTemp sensor; F21/K5 fault; Inspection Procedure: Monitor CoolantTemp on 0x182; pump function test; verify F21/K5"
+  ],
+  "inspection_steps": [
+    "Review the cited retrieved evidence and run the corresponding diagnostic checks."
+  ],
+  "recommended_actions": [
+    "Use the cited source material to continue diagnosis."
+  ],
+  "related_components": [],
+  "connectors": [],
+  "fuses": [],
+  "relays": [],
+  "can_signals": [],
+  "confidence": {
+    "overall_score": 0.8689666666666666,
+    "level": "MEDIUM",
+    "validation_status": "FAILED_SAFETY",
+    "component_scores": [
+      {
+        "name": "evidence_coverage",
+        "score": 0.6666666666666666
+      },
+      {
+        "name": "citation_validity",
+        "score": 1.0
+      },
+      {
+        "name": "retrieval_score",
+        "score": 0.682
+      },
+      {
+        "name": "entity_validation",
+        "score": 1.0
+      },
+      {
+        "name": "relationship_validation",
+        "score": 1.0
+      },
+      {
+        "name": "consistency",
+        "score": 1.0
+      },
+      {
+        "name": "hallucination_detection",
+        "score": 1.0
+      }
+    ],
+    "hallucination_detected": false
+  },
+  "safety_warnings": [
+    "SAFETY VIOLATION: Safety rule triggered: Check for live voltage before opening panels",
+    "SAFETY VIOLATION: Safety rule triggered: Ensure proper grounding before testing",
+    "SAFETY VIOLATION: Safety rule triggered: Check battery management system status",
+    "SAFETY VIOLATION: Safety rule triggered: Verify charger is unplugged before repairs"
+  ],
+  "evidence": [
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Retrieved engineering evidence for: Test query",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Worksheet: ErrorCodes row 2: Code: P1C21; Description: Motor Overtemperature (Stator > 150C); Severity: MEDIUM; Possible Cause: Cooling pump failure; low coolant; blocked passages; CoolantTemp sensor; F21/K5 fault; Inspection Procedure: Monitor CoolantTemp on 0x182; pump function test; verify F21/K5",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    }
+  ],
+  "citations": [
+    {
+      "text": "EngineeringDatabase.xlsx | section Worksheet: ErrorCodes  (sql_exact, score=0.730)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    },
+    {
+      "text": "EngineeringDatabase.xlsx | section Worksheet: ErrorCodes  (sql_exact, score=0.730)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    },
+    {
+      "text": "ServiceManual.pdf | p.13 | section Table from page 13  (sql_exact, score=0.650)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    },
+    {
+      "text": "ServiceManual.pdf | p.13 | section Table from page 13  (sql_exact, score=0.650)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    },
+    {
+      "text": "ServiceManual.pdf | p.13 | section Table from page 13  (sql_exact, score=0.650)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    }
+  ],
+  "entities": [],
+  "validation": {
+    "status": "FAILED_SAFETY",
+    "stages": [
+      {
+        "name": "EvidenceValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.335,
+        "error": "",
+        "result_count": 2
+      },
+      {
+        "name": "CitationValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.54,
+        "error": "",
+        "result_count": 5
+      },
+      {
+        "name": "EntityValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.091,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "RelationshipValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.078,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "ConsistencyChecker",
+        "status": "COMPLETED",
+        "duration_ms": 0.09899999999999999,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "HallucinationDetector",
+        "status": "COMPLETED",
+        "duration_ms": 0.08399999999999999,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "SafetyValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.14100000000000001,
+        "error": "",
+        "result_count": 4
+      },
+      {
+        "name": "ConfidenceEngine",
+        "status": "COMPLETED",
+        "duration_ms": 0.103,
+        "error": "",
+        "result_count": 1
+      },
+      {
+        "name": "ReportBuilder",
+        "status": "COMPLETED",
+        "duration_ms": 0.08,
+        "error": "",
+        "result_count": 1
+      }
+    ],
+    "hallucination_summary": "No hallucinations detected",
+    "safety_rules_triggered": [
+      "Check for live voltage before opening panels",
+      "Ensure proper grounding before testing",
+      "Check battery management system status",
+      "Verify charger is unplugged before repairs"
+    ]
+  },
+  "processing_time_ms": 53462.7,
+  "active_model": "qwen3:8b",
+  "_metadata": {
+    "id": "Test_query_2026-07-09_162649",
+    "timestamp": "2026-07-09T16:26:49.291988",
+    "query": "Test query",
+    "problem_summary": "Retrieved engineering evidence for: Test query",
+    "confidence_score": 0.8689666666666666,
+    "confidence_level": "MEDIUM",
+    "model": "qwen3:8b",
+    "processing_time_ms": 53462.7,
+    "md_path": "Reports\\2026\\07\\Test_query_2026-07-09_162649.md",
+    "json_path": "Reports\\2026\\07\\Test_query_2026-07-09_162649.json"
+  }
+}

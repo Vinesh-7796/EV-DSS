@@ -1,0 +1,41 @@
+{
+  "source": "~$EngineeringDatabase.xlsx",
+  "type": "xlsx",
+  "metadata": {
+    "filename": "",
+    "file_size": 0,
+    "checksum": "",
+    "page_count": 0,
+    "sheet_count": 0,
+    "message_count": 0,
+    "image_width": 0,
+    "image_height": 0,
+    "image_format": "",
+    "processed_at": "",
+    "processing_time_s": 0.0
+  },
+  "sections": [],
+  "tables": [],
+  "images": [],
+  "chunks": [],
+  "raw_text": "",
+  "content_nodes": [],
+  "relationship_graph": {
+    "nodes": {},
+    "edges": []
+  },
+  "processing_info": {
+    "processor_name": "",
+    "processing_time_s": 0.0,
+    "processed_at": "",
+    "schema_version": "2.0"
+  },
+  "statistics": {
+    "total_content_nodes": 0,
+    "total_relationships": 0,
+    "node_type_counts": {},
+    "max_depth": 0
+  },
+  "_store_id": "0c47ecfa3790e6bb",
+  "_stored_at": "2026-07-09T16:36:07.228069"
+}

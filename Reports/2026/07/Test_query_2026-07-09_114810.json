@@ -1,0 +1,177 @@
+{
+  "conversation_id": "44839d0b-e079-401f-934a-fdb3f2c6bb75",
+  "response": "Unable to generate diagnostic response for: Test query",
+  "problem_summary": "Unable to generate diagnostic response for: Test query",
+  "possible_causes": [
+    "Engine unavailable: Ollama connection failed: [WinError 10061] No connection could be made because the target machine actively refused it"
+  ],
+  "inspection_steps": [
+    "Check that the LLM service is running and configured correctly."
+  ],
+  "recommended_actions": [
+    "Verify configuration and service status."
+  ],
+  "related_components": [],
+  "connectors": [],
+  "fuses": [],
+  "relays": [],
+  "can_signals": [],
+  "confidence": {
+    "overall_score": 0.8022999999999999,
+    "level": "MEDIUM",
+    "validation_status": "FAILED_CITATION",
+    "component_scores": [
+      {
+        "name": "evidence_coverage",
+        "score": 1.0
+      },
+      {
+        "name": "citation_validity",
+        "score": 0.0
+      },
+      {
+        "name": "retrieval_score",
+        "score": 0.682
+      },
+      {
+        "name": "entity_validation",
+        "score": 1.0
+      },
+      {
+        "name": "relationship_validation",
+        "score": 1.0
+      },
+      {
+        "name": "consistency",
+        "score": 1.0
+      },
+      {
+        "name": "hallucination_detection",
+        "score": 1.0
+      }
+    ],
+    "hallucination_detected": false
+  },
+  "safety_warnings": [],
+  "evidence": [
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Unable to generate diagnostic response for: Test query",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "ServiceManual.pdf:tbl_12:row:1",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Engine unavailable: Ollama connection failed: [WinError 10061] No connection could be made because the target machine actively refused it",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:2",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Verify configuration and service status.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    }
+  ],
+  "citations": [],
+  "entities": [],
+  "validation": {
+    "status": "FAILED_CITATION",
+    "stages": [
+      {
+        "name": "EvidenceValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.242,
+        "error": "",
+        "result_count": 3
+      },
+      {
+        "name": "CitationValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.079,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "EntityValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.075,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "RelationshipValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.057,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "ConsistencyChecker",
+        "status": "COMPLETED",
+        "duration_ms": 0.078,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "HallucinationDetector",
+        "status": "COMPLETED",
+        "duration_ms": 0.06899999999999999,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "SafetyValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.092,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "ConfidenceEngine",
+        "status": "COMPLETED",
+        "duration_ms": 0.101,
+        "error": "",
+        "result_count": 1
+      },
+      {
+        "name": "ReportBuilder",
+        "status": "COMPLETED",
+        "duration_ms": 0.08,
+        "error": "",
+        "result_count": 1
+      }
+    ],
+    "hallucination_summary": "No hallucinations detected",
+    "safety_rules_triggered": []
+  },
+  "processing_time_ms": 3121.9,
+  "active_model": "qwen3:8b",
+  "_metadata": {
+    "id": "Test_query_2026-07-09_114810",
+    "timestamp": "2026-07-09T11:48:10.564048",
+    "query": "Test query",
+    "problem_summary": "Unable to generate diagnostic response for: Test query",
+    "confidence_score": 0.8022999999999999,
+    "confidence_level": "MEDIUM",
+    "model": "qwen3:8b",
+    "processing_time_ms": 3121.9,
+    "md_path": "Reports\\2026\\07\\Test_query_2026-07-09_114810.md",
+    "json_path": "Reports\\2026\\07\\Test_query_2026-07-09_114810.json"
+  }
+}

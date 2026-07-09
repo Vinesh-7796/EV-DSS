@@ -1,0 +1,234 @@
+{
+  "conversation_id": "21d9ec06-802c-4922-933b-ee0920f14c99",
+  "response": "Torque specification for C35 phase connector bolts",
+  "problem_summary": "Torque specification for C35 phase connector bolts",
+  "possible_causes": [
+    "Incorrect torque application leading to connection failure",
+    "Corrosion or loosening at C35 bolts"
+  ],
+  "inspection_steps": [
+    "Verify torque wrench calibration",
+    "Check C35 bolt tightness using torque wrench",
+    "Inspect for corrosion or damage on C35 bolts"
+  ],
+  "recommended_actions": [
+    "Apply 8 Nm torque with Loctite 243",
+    "Retorque if loosening detected",
+    "Replace corroded bolts and reapply thread locker"
+  ],
+  "related_components": [
+    "MCU",
+    "Traction Motor"
+  ],
+  "connectors": [
+    "C35"
+  ],
+  "fuses": [],
+  "relays": [],
+  "can_signals": [],
+  "confidence": {
+    "overall_score": 0.8571333333333333,
+    "level": "MEDIUM",
+    "validation_status": "FAILED_CITATION",
+    "component_scores": [
+      {
+        "name": "evidence_coverage",
+        "score": 0.8333333333333334
+      },
+      {
+        "name": "citation_validity",
+        "score": 0.3333333333333333
+      },
+      {
+        "name": "retrieval_score",
+        "score": 0.992
+      },
+      {
+        "name": "entity_validation",
+        "score": 1.0
+      },
+      {
+        "name": "relationship_validation",
+        "score": 1.0
+      },
+      {
+        "name": "consistency",
+        "score": 1.0
+      },
+      {
+        "name": "hallucination_detection",
+        "score": 1.0
+      }
+    ],
+    "hallucination_detected": false
+  },
+  "safety_warnings": [],
+  "evidence": [
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_8:row:1",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Torque specification for C35 phase connector bolts",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_8:row:1",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Incorrect torque application leading to connection failure",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_8:row:1",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Corrosion or loosening at C35 bolts",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_8:row:1",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Apply 8 Nm torque with Loctite 243",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_8:row:1",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Replace corroded bolts and reapply thread locker",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    }
+  ],
+  "citations": [
+    {
+      "text": "[EngineeringDatabase.xlsx] Worksheet: TorqueSpecifications row 1",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    },
+    {
+      "text": "[EngineeringDatabase.xlsx] Worksheet 'TorqueSpecifications' row 2",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": false,
+      "reason": "Citation does not match any retrieved metadata"
+    },
+    {
+      "text": "[Connectors] G3: 8",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": false,
+      "reason": "Citation does not match any retrieved metadata"
+    }
+  ],
+  "entities": [],
+  "validation": {
+    "status": "FAILED_CITATION",
+    "stages": [
+      {
+        "name": "EvidenceValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.722,
+        "error": "",
+        "result_count": 5
+      },
+      {
+        "name": "CitationValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.391,
+        "error": "",
+        "result_count": 1
+      },
+      {
+        "name": "EntityValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.076,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "RelationshipValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.062,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "ConsistencyChecker",
+        "status": "COMPLETED",
+        "duration_ms": 0.079,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "HallucinationDetector",
+        "status": "COMPLETED",
+        "duration_ms": 0.078,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "SafetyValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.08600000000000001,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "ConfidenceEngine",
+        "status": "COMPLETED",
+        "duration_ms": 0.089,
+        "error": "",
+        "result_count": 1
+      },
+      {
+        "name": "ReportBuilder",
+        "status": "COMPLETED",
+        "duration_ms": 0.068,
+        "error": "",
+        "result_count": 1
+      }
+    ],
+    "hallucination_summary": "No hallucinations detected",
+    "safety_rules_triggered": []
+  },
+  "processing_time_ms": 86328.7,
+  "active_model": "qwen3:8b",
+  "_metadata": {
+    "id": "What_torque_for_C35_phase_conn_2026-07-09_163034",
+    "timestamp": "2026-07-09T16:30:34.314338",
+    "query": "What torque for C35 phase connector bolts?",
+    "problem_summary": "Torque specification for C35 phase connector bolts",
+    "confidence_score": 0.8571333333333333,
+    "confidence_level": "MEDIUM",
+    "model": "qwen3:8b",
+    "processing_time_ms": 86328.7,
+    "md_path": "Reports\\2026\\07\\What_torque_for_C35_phase_conn_2026-07-09_163034.md",
+    "json_path": "Reports\\2026\\07\\What_torque_for_C35_phase_conn_2026-07-09_163034.json"
+  }
+}

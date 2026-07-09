@@ -1,0 +1,56 @@
+{
+  "png/CoolingSystemSchematic": {
+    "store_id": "png/CoolingSystemSchematic",
+    "source": "CoolingSystemSchematic.png",
+    "type": "png",
+    "filename": "CoolingSystemSchematic.png",
+    "file_size": 360740,
+    "checksum": "a096a4b738efa248e317c5aad13c093b9182ef2a41ba5c28d427f8c745b57e9c",
+    "stored_at": "2026-07-09T16:55:04.179054"
+  },
+  "xlsx/EngineeringDatabase": {
+    "store_id": "xlsx/EngineeringDatabase",
+    "source": "EngineeringDatabase.xlsx",
+    "type": "xlsx",
+    "filename": "EngineeringDatabase.xlsx",
+    "file_size": 18153,
+    "checksum": "a122b083fd1547976f9926779cf675c3ae5314a222ed295d3977f9d335d95a2f",
+    "stored_at": "2026-07-09T16:51:31.433386"
+  },
+  "xlsx/EngineeringDatabase_v2": {
+    "store_id": "xlsx/EngineeringDatabase_v2",
+    "source": "EngineeringDatabase_v2.xlsx",
+    "type": "xlsx",
+    "filename": "EngineeringDatabase_v2.xlsx",
+    "file_size": 18153,
+    "checksum": "a122b083fd1547976f9926779cf675c3ae5314a222ed295d3977f9d335d95a2f",
+    "stored_at": "2026-07-09T16:58:52.270252"
+  },
+  "pdf/ServiceManual": {
+    "store_id": "pdf/ServiceManual",
+    "source": "ServiceManual.pdf",
+    "type": "pdf",
+    "filename": "ServiceManual.pdf",
+    "file_size": 29259,
+    "checksum": "6486977742b19e86c115eb2ad3bac5d723106e5f67181530616f57b5093de494",
+    "stored_at": "2026-07-09T16:55:04.835618"
+  },
+  "dbc/Vehicle": {
+    "store_id": "dbc/Vehicle",
+    "source": "Vehicle.dbc",
+    "type": "dbc",
+    "filename": "Vehicle.dbc",
+    "file_size": 1977,
+    "checksum": "9acfcc59b25fe2e1bd6b59644d6138081cb54794e6f9b886a9ad40eb0976bc9d",
+    "stored_at": "2026-07-09T16:55:04.174735"
+  },
+  "xlsx/~$EngineeringDatabase": {
+    "store_id": "xlsx/~$EngineeringDatabase",
+    "source": "~$EngineeringDatabase.xlsx",
+    "type": "xlsx",
+    "filename": "",
+    "file_size": 0,
+    "checksum": "",
+    "stored_at": "2026-07-09T16:36:07.228506"
+  }
+}

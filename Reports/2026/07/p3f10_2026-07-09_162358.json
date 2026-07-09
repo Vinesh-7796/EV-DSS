@@ -1,0 +1,343 @@
+{
+  "conversation_id": "8e5b6ce8-c386-476d-ae3a-c73eff3a5b57",
+  "response": "P3F10: Cooling System Degraded (CoolantTemp > 90C)",
+  "problem_summary": "P3F10: Cooling System Degraded (CoolantTemp > 90C)",
+  "possible_causes": [
+    "F21 blown (50A)",
+    "K5 failure",
+    "pump inoperative",
+    "low coolant",
+    "air in system",
+    "radiator fan fault"
+  ],
+  "inspection_steps": [
+    "Before EV diagnostic work, check for live voltage before opening panels; ensure proper grounding before testing; verify coolant is neutralized; check battery management system status; verify charger is unplugged before repairs.",
+    "Verify F21 continuity",
+    "actuate K5 via 0x201",
+    "monitor CoolantTemp on 0x182",
+    "inspect coolant",
+    "test fan at 85C"
+  ],
+  "recommended_actions": [
+    "Before EV diagnostic work, check for live voltage before opening panels; ensure proper grounding before testing; verify coolant is neutralized; check battery management system status; verify charger is unplugged before repairs.",
+    "Inspect and correct F21 blown (50A).",
+    "Inspect and correct K5 failure.",
+    "Inspect and correct pump inoperative.",
+    "Inspect and correct low coolant."
+  ],
+  "related_components": [
+    "F21 blown (50A)",
+    "K5 failure",
+    "pump inoperative",
+    "low coolant"
+  ],
+  "connectors": [
+    "C42"
+  ],
+  "fuses": [
+    "F21"
+  ],
+  "relays": [],
+  "can_signals": [
+    "0x182",
+    "0x201"
+  ],
+  "confidence": {
+    "overall_score": 0.9904,
+    "level": "HIGH",
+    "validation_status": "PASSED",
+    "component_scores": [
+      {
+        "name": "evidence_coverage",
+        "score": 1.0
+      },
+      {
+        "name": "citation_validity",
+        "score": 1.0
+      },
+      {
+        "name": "retrieval_score",
+        "score": 0.9359999999999999
+      },
+      {
+        "name": "entity_validation",
+        "score": 1.0
+      },
+      {
+        "name": "relationship_validation",
+        "score": 1.0
+      },
+      {
+        "name": "consistency",
+        "score": 1.0
+      },
+      {
+        "name": "hallucination_detection",
+        "score": 1.0
+      }
+    ],
+    "hallucination_detected": false
+  },
+  "safety_warnings": [],
+  "evidence": [
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:4",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "P3F10: Cooling System Degraded (CoolantTemp > 90C)",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:4",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "F21 blown (50A)",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:4",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "K5 failure",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:4",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "pump inoperative",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:4",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "low coolant",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:4",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "air in system",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:4",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "radiator fan fault",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:4",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Before EV diagnostic work, check for live voltage before opening panels; ensure proper grounding before testing; verify coolant is neutralized; check battery management system status; verify charger is unplugged before repairs.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:4",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Inspect and correct F21 blown (50A).",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:4",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Inspect and correct K5 failure.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:4",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Inspect and correct pump inoperative.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    },
+    {
+      "node_id": "EngineeringDatabase.xlsx:tbl_1:row:4",
+      "document": "",
+      "section": "",
+      "page": 0,
+      "content": "Inspect and correct low coolant.",
+      "score": 1.0,
+      "relationship": "",
+      "entity": "",
+      "validator": "EvidenceValidator"
+    }
+  ],
+  "citations": [
+    {
+      "text": "EngineeringDatabase.xlsx | section Worksheet: ErrorCodes  (sql_exact, score=1.000)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    },
+    {
+      "text": "ServiceManual.pdf | p.12 | section 10. Diagnostic Error Code Reference  (sql_exact, score=0.920)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    },
+    {
+      "text": "ServiceManual.pdf | section raw_text  (sql_exact, score=0.920)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    },
+    {
+      "text": "ServiceManual.pdf | section raw_text  (sql_exact, score=0.920)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    },
+    {
+      "text": "EngineeringDatabase.xlsx | section Worksheet: DiagnosticMeasurements  (sql_exact, score=0.920)",
+      "document_id": "",
+      "page": null,
+      "section": null,
+      "is_valid": true,
+      "reason": "Citation matches retrieved context metadata"
+    }
+  ],
+  "entities": [],
+  "validation": {
+    "status": "PASSED",
+    "stages": [
+      {
+        "name": "EvidenceValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.433,
+        "error": "",
+        "result_count": 12
+      },
+      {
+        "name": "CitationValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.382,
+        "error": "",
+        "result_count": 5
+      },
+      {
+        "name": "EntityValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.062,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "RelationshipValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.051,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "ConsistencyChecker",
+        "status": "COMPLETED",
+        "duration_ms": 0.06999999999999999,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "HallucinationDetector",
+        "status": "COMPLETED",
+        "duration_ms": 0.074,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "SafetyValidator",
+        "status": "COMPLETED",
+        "duration_ms": 0.088,
+        "error": "",
+        "result_count": 0
+      },
+      {
+        "name": "ConfidenceEngine",
+        "status": "COMPLETED",
+        "duration_ms": 0.076,
+        "error": "",
+        "result_count": 1
+      },
+      {
+        "name": "ReportBuilder",
+        "status": "COMPLETED",
+        "duration_ms": 0.064,
+        "error": "",
+        "result_count": 1
+      }
+    ],
+    "hallucination_summary": "No hallucinations detected",
+    "safety_rules_triggered": []
+  },
+  "processing_time_ms": 1070.6,
+  "active_model": "qwen3:8b",
+  "_metadata": {
+    "id": "p3f10_2026-07-09_162358",
+    "timestamp": "2026-07-09T16:23:58.774668",
+    "query": "p3f10",
+    "problem_summary": "P3F10: Cooling System Degraded (CoolantTemp > 90C)",
+    "confidence_score": 0.9904,
+    "confidence_level": "HIGH",
+    "model": "qwen3:8b",
+    "processing_time_ms": 1070.6,
+    "md_path": "Reports\\2026\\07\\p3f10_2026-07-09_162358.md",
+    "json_path": "Reports\\2026\\07\\p3f10_2026-07-09_162358.json"
+  }
+}

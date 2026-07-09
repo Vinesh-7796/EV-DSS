@@ -24,6 +24,7 @@ export interface DiagnosticResult {
   entities?: EntityItem[];
   validation?: ValidationInfo;
   processing_time_ms: number;
+  active_model?: string;
 }
 
 export interface ConfidenceInfo {
@@ -109,4 +110,124 @@ export interface Conversation {
   messages: ChatMessage[];
   created_at: number;
   updated_at: number;
+}
+
+// ── Phase 1 — Knowledge Base ────────────────────────────────────────────────
+
+export interface KBDocument {
+  filename: string;
+  type: string;
+  status: "indexed" | "processing" | "error" | "not_indexed";
+  chunks: number;
+  nodes: number;
+  edges: number;
+  last_indexed: string;
+  checksum: string;
+  file_size: number;
+  store_id: string;
+  file_exists: boolean;
+}
+
+export interface KBStatus {
+  watcher_running: boolean;
+  monitored_path: string;
+  queue_depth: number;
+  total_processed: number;
+  total_errors: number;
+  last_event_at: string | null;
+  last_error: string | null;
+  indexed_files: number;
+}
+
+export interface IngestionLogEntry {
+  timestamp: string;
+  event: "added" | "modified" | "deleted" | "reindex" | "error";
+  filename: string;
+  status: "queued" | "processing" | "done" | "failed" | "removed";
+  detail: string;
+  duration_ms: number;
+}
+
+// ── Phase 2 — Model Management ──────────────────────────────────────────────
+
+export interface OllamaModel {
+  name: string;
+  size_bytes: number;
+  size_formatted: string;
+  quantization: string;
+  family: string;
+  modified_date: string;
+  is_recommended: boolean;
+}
+
+export interface ActiveModelInfo {
+  active_model: string;
+  runtime: string;
+  details: OllamaModel | null;
+  ollama_url: string;
+}
+
+export interface PullProgress {
+  status: string;
+  digest?: string;
+  total?: number;
+  completed?: number;
+  error?: string;
+}
+
+export interface HardwareRecommendations {
+  ram_gb: number;
+  gpu_vram_gb: number;
+  gpu_name: string;
+  recommendation: string;
+}
+
+// ── Phase 3 — Diagnostic History ────────────────────────────────────────────
+
+export interface ReportSummary {
+  id: string;
+  timestamp: string;
+  query: string;
+  problem_summary: string;
+  confidence_score: number;
+  confidence_level: string;
+  model: string;
+  processing_time_ms: number;
+  md_path: string;
+}
+
+export interface ReportDetail {
+  metadata: ReportSummary;
+  diagnostic_result: DiagnosticResult;
+  markdown: string;
+}
+
+// ── Phase 4 — System Status ─────────────────────────────────────────────────
+
+export interface SystemHealth {
+  status: "healthy" | "degraded" | "offline";
+  components: {
+    backend: { status: string; name: string; version: string };
+    ollama: { status: string; url: string; active_model: string; runtime: string; error?: string };
+    embedding: { status: string; model: string; dimension: number };
+    vector_db: { status: string; url: string; error?: string };
+    graph: { status: string; entity_count: number };
+    knowledge_base: {
+      status: string;
+      indexed_documents: number;
+      total_chunks: number;
+      total_entities: number;
+      last_update: string;
+      watcher_running: boolean;
+    };
+  };
+  performance: {
+    avg_response_time_ms: number;
+    response_samples: number;
+  };
+  hardware: {
+    gpu: { available: boolean; name: string | null; vram_mb: number };
+    ram: { total_gb?: number; used_gb?: number; available_gb?: number; percent?: number; available?: boolean };
+  };
+  version: string;
 }

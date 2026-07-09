@@ -31,6 +31,9 @@ from routes.chat import router as chat_router
 from routes.diagnostics import router as diagnostics_router
 from routes.documents import router as documents_router
 from routes.configuration import router as configuration_router
+from routes.knowledge_base import router as kb_router
+from routes.models import router as models_router
+from routes.reports import router as reports_router
 from websocket.chat_socket import router as ws_router
 from middleware.logging import LoggingMiddleware
 from middleware.request_id import RequestIDMiddleware
@@ -43,7 +46,26 @@ settings = get_settings()
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     print(f"EV-DDSS Application Layer starting — v{settings.application.version}")
+
+    # Start KB watcher background service
+    try:
+        from services.kb_watcher import get_kb_watcher
+        watcher = get_kb_watcher()
+        watcher.start()
+        print("  [KB Watcher] Started — monitoring data/raw/")
+    except Exception as exc:
+        print(f"  [KB Watcher] Could not start: {exc}")
+
     yield
+
+    # Stop KB watcher on shutdown
+    try:
+        from services.kb_watcher import get_kb_watcher
+        get_kb_watcher().stop()
+        print("  [KB Watcher] Stopped")
+    except Exception:
+        pass
+
     print("EV-DDSS Application Layer shutting down")
 
 
@@ -69,12 +91,22 @@ def create_app() -> FastAPI:
 
     register_exception_handlers(app)
 
+    # Existing routes
     app.include_router(health_router, prefix="", tags=["health"])
     app.include_router(chat_router, prefix="/chat", tags=["chat"])
     app.include_router(diagnostics_router, prefix="/diagnostics", tags=["diagnostics"])
     app.include_router(documents_router, prefix="/documents", tags=["documents"])
     app.include_router(configuration_router, prefix="", tags=["configuration"])
     app.include_router(ws_router, prefix="", tags=["websocket"])
+
+    # Phase 1 — Knowledge Base
+    app.include_router(kb_router, prefix="/kb", tags=["knowledge-base"])
+
+    # Phase 2 — Model Manager
+    app.include_router(models_router, prefix="/models", tags=["models"])
+
+    # Phase 3 — Reports / History
+    app.include_router(reports_router, prefix="/reports", tags=["reports"])
 
     @app.get("/")
     def root():
